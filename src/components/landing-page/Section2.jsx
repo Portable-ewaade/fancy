@@ -1,0 +1,48 @@
+import React from "react";
+
+const Section2 = () => {
+  return (
+    <section className="grid_container bg-color pb-12">
+      <main className="wrapper box-sec">
+        <div className="">
+          <h1 className="font-extrabold text-color text-center text-3xl my-12">
+            About MotivHealth Research Initiative
+          </h1>
+          <p className="font-extralight mt-8 tracking-wide">
+            Welcome to MotivHealth Research Initiative (MHRI). We're dedicated
+            to revolutionizing behavioral health through data-driven insights,
+            technology, and innovative interventions. Our commitment lies in
+            transforming mental health by advancing research with predictive
+            analytics.{" "}
+          </p>
+          <p className="font-extralight mt-8 tracking-wide">
+            {" "}
+            MHRI is a passionate collective, striving to reshape behavioral
+            health by pioneering solutions, influencing health policy, and
+            improving outcomes. We embody a culture of innovation,
+            collaboration, and compassion, leveraging data, technology, and
+            evidence-based practices to impact mental health care delivery.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="/assets/home-img1.png"
+            alt="home image"
+            className="mx-auto pt-10"
+            height={500}
+          />
+
+          <a
+            href="#"
+            className="text-color font-extrabold text-xs underline underline-offset-4"
+          >
+            See more about us
+          </a>
+        </div>
+      </main>
+    </section>
+  );
+};
+
+export default Section2;

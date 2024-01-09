@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* colors */
+.text-color{
+ color: #0A0A8C;
+}
+.bg-color2{
+ background-color: #050546;
+}
+.text-color2{
+ color:#00B4FE;
+}
+.bg-color{
+  background-color: #E4F7F4;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 1fr auto auto auto;
+}
+.box-sec{
+  width: 90%;
+  margin: auto;
+}
+.wrapper {
+  grid-column: 1 / span 12;
+}
+/* section {
+  height: auto !important;
+  scroll-snap-align: start;
+} */
+.navbar_container {
+  background-color: #fff;
+  grid-column: 1 / span 12;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
 }
