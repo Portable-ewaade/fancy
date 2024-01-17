@@ -18,7 +18,6 @@ const Banner = () => {
         <div className="absolute end-0 top-20 mt-10">
           <img src="/assets/big-logo.png" alt="logo" className="" width={350} />
         </div>
-
         <div className="absolute start-0 top-10">
           <img
             src="/assets/blue-left.png"
