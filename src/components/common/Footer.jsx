@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="grid-container ">
+    <section className="grid-container text-lg ">
       <div className="wrapper box-sec py-5 ">
         <div className="flex">
           <div className="flex-1">

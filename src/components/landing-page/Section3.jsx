@@ -2,7 +2,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <section className="grid_container bg-white relative pb-16 ">
+    <section className="grid_container bg-white relative pb-16 text-lg">
       <main className="wrapper box-sec">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-16">
@@ -10,17 +10,17 @@ const Section3 = () => {
           </h1>
           <div className="flex my-12 ">
             <div className="flex-1">
-              <h3 className="font-bold text-xl my-2">
+              <h3 className="font-bold text-xl my-3">
                 Research Project Management
               </h3>
-              <p>
+              <p className="w-5/6">
                 Skillful oversight of AI/ML and behavioral health research
                 initiatives.
               </p>
             </div>
             <div className="flex-1">
-              <h3 className="font-bold text-xl my-2">Consulting Solution</h3>
-              <p>
+              <h3 className="font-bold text-xl my-3">Consulting Solution</h3>
+              <p className="w-6/7">
                 Strategic guidance and expert advice for data-driven innovations
                 in mental health.
               </p>
@@ -29,19 +29,19 @@ const Section3 = () => {
 
           <div className="flex my-12 ">
             <div className="flex-1">
-              <h3 className="font-bold text-xl my-2">
+              <h3 className="font-bold text-xl my-3">
                 Healthcare Technology Consulting
               </h3>
-              <p>
+              <p className="w-5/6">
                 Implementing technology solutions for improved healthcare
                 delivery and efficiency.
               </p>
             </div>
             <div className="flex-1">
-              <h3 className="font-bold text-xl my-2">
+              <h3 className="font-bold text-xl my-3">
                 Clinical Research Services
               </h3>
-              <p>
+              <p className="w-5/6">
                 Expert guidance to ensure compliant and effective clinical
                 studies' success.
               </p>
@@ -50,7 +50,7 @@ const Section3 = () => {
 
           <div className="flex my-12">
             <div className="flex-1">
-              <h3 className="font-bold text-xl my-2">
+              <h3 className="font-bold text-xl my-3">
                 AI/ML Research and Development
               </h3>
               <p>Exploring innovative AI/ML for mental health solutions.</p>
@@ -58,7 +58,7 @@ const Section3 = () => {
             <div className="flex-1 mt-10">
               <a
                 href="#"
-                className=" text-color font-extrabold text-xs underline underline-offset-4"
+                className=" text-color font-extrabold text-lg underline underline-offset-4"
               >
                 See more details about our services
               </a>

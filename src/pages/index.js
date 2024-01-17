@@ -1,5 +1,11 @@
 import { Footer, Navbar } from "@/components/common";
-import { Banner, Section2, Section3, Section4, Section5 } from "@/components/landing-page";
+import {
+  Banner,
+  Section2,
+  Section3,
+  Section4,
+  Section5,
+} from "@/components/landing-page";
 import Head from "next/head";
 
 export default function Home() {
@@ -20,7 +26,6 @@ export default function Home() {
         <Section4 />
         <Section5 />
         <Footer />
-
       </main>
     </>
   );

@@ -2,20 +2,20 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <section className="grid_container bg-color pb-12">
+    <section className="grid_container bg-color pb-12 text-lg">
       <main className="wrapper box-sec">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             About MotivHealth Research Initiative
           </h1>
-          <p className="font-extralight mt-8 tracking-wide">
+          <p className="font-normal mt-8 tracking-wide">
             Welcome to MotivHealth Research Initiative (MHRI). We're dedicated
             to revolutionizing behavioral health through data-driven insights,
             technology, and innovative interventions. Our commitment lies in
             transforming mental health by advancing research with predictive
             analytics.{" "}
           </p>
-          <p className="font-extralight mt-8 tracking-wide">
+          <p className="font-normal mt-8 tracking-wide">
             {" "}
             MHRI is a passionate collective, striving to reshape behavioral
             health by pioneering solutions, influencing health policy, and

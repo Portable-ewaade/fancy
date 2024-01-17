@@ -10,8 +10,11 @@
 }
 
 /* colors */
-.text-color{
+.text-color-banner{
  color: #0A0A8C;
+}
+.text-color{
+ color: #07075D;
 }
 .bg-color2{
  background-color: #050546;
@@ -22,7 +25,20 @@
 .bg-color{
   background-color: #E4F7F4;
 }
-
+a.active{
+  color:#00B4FE !important;
+}
+a:hover{
+  color:#00B4FE !important;
+}
+/* .half-circle{
+  z-index: 99 ;
+} */
+h3 {
+  background: linear-gradient(to right, #0A0A8C, #00B4FE, #00B4FE);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 .grid_container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
