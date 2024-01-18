@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "export": "next export",
+    "export": "export",
     "dev": "next dev",
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build && export",
     "lint": "next lint"
   },
   "dependencies": {

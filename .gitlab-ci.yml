@@ -9,7 +9,7 @@ build:
   image: node:18
   artifacts:
     paths:
-      - out
+      - dist
   only:
     - staging
     - dev
@@ -24,19 +24,19 @@ build:
     - npm run build
     - npm run export
 
-# deploy-staging:
-#   stage: deploy-staging
-#   image: python:3.8
-#   dependencies: 
-#     - build
-#   only:
-#     - staging
-#   before_script:
-#     - pip3 install awscli
-#     # - source .dev.env
-#   script:
-#     - aws s3 sync ./out/ s3://stagin.theacconsulting.com
-#     - aws cloudfront create-invalidation --distribution-id $STG_CDN --paths "/*"
+deploy-staging:
+  stage: deploy-staging
+  image: python:3.8
+  dependencies: 
+    - build
+  only:
+    - staging
+  before_script:
+    - pip3 install awscli
+    # - source .dev.env
+  script:
+    - aws s3 sync ./dist/ s3://stagin.motivhealth.org
+    - aws cloudfront create-invalidation --distribution-id $STG_CDN --paths "/*"
 
 deploy-dev:
   stage: deploy-dev
@@ -47,9 +47,11 @@ deploy-dev:
     - dev
   before_script:
     - pip3 install awscli
+    - pip install --upgrade pip
+    - aws --version
     # - source .dev.env
   script:
-    - aws s3 sync ./out/ s3://dev.theacconsulting.com
+    - aws s3 sync ./dist/ s3://dev.motivhealth.org
     - aws cloudfront create-invalidation --distribution-id $DEV_CDN --paths "/*"
 
 
@@ -64,7 +66,7 @@ deploy-prod:
     - pip3 install awscli
     # - source .prod.env
   script:
-    - aws s3 sync ./out/ s3://${site_bucket_name} 
+    - aws s3 sync ./dist/ s3://${site_bucket_name} 
     - aws s3 sync s3://${site_bucket_name} s3://${S3_BUCKET}/ 
     - aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/*"
     - aws cloudfront create-invalidation --distribution-id $CDN_VARIABLE --paths "/*"
