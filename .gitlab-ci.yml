@@ -47,6 +47,8 @@ deploy-dev:
     - dev
   before_script:
     - pip3 install awscli
+    - pip install --upgrade pip
+    - aws --version
     # - source .dev.env
   script:
     - aws s3 sync ./dist/ s3://dev.motivhealth.org
