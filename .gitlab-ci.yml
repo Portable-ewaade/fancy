@@ -35,7 +35,7 @@ deploy-staging:
     - pip3 install awscli
     # - source .dev.env
   script:
-    - aws s3 sync ./dist/ s3://staging.motivhealth.com
+    - aws s3 sync ./dist/ s3://staging.motivhealth.org
     - aws cloudfront create-invalidation --distribution-id $STG_CDN --paths "/*"
 
 deploy-dev:
