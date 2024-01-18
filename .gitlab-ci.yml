@@ -24,19 +24,19 @@ build:
     - npm run build
     - npm run export
 
-# deploy-staging:
-#   stage: deploy-staging
-#   image: python:3.8
-#   dependencies: 
-#     - build
-#   only:
-#     - staging
-#   before_script:
-#     - pip3 install awscli
-#     # - source .dev.env
-#   script:
-#     - aws s3 sync ./dist/ s3://stagin.theacconsulting.com
-#     - aws cloudfront create-invalidation --distribution-id $STG_CDN --paths "/*"
+deploy-staging:
+  stage: deploy-staging
+  image: python:3.8
+  dependencies: 
+    - build
+  only:
+    - staging
+  before_script:
+    - pip3 install awscli
+    # - source .dev.env
+  script:
+    - aws s3 sync ./dist/ s3://stagin.motivhealth.org
+    - aws cloudfront create-invalidation --distribution-id $STG_CDN --paths "/*"
 
 deploy-dev:
   stage: deploy-dev
