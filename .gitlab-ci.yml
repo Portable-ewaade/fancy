@@ -49,7 +49,7 @@ deploy-dev:
     - pip3 install awscli
     # - source .dev.env
   script:
-    - aws s3 sync ./out/ s3://dev.theacconsulting.com
+    - aws s3 sync ./out/ s3://${dev_bucket}
     - aws cloudfront create-invalidation --distribution-id $DEV_CDN --paths "/*"
 
 
