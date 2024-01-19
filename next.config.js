@@ -1,21 +1,23 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
-const nextConfig = {
-    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  trailingSlash: true,
-  reactStrictMode: true,
-  swcMinify: true,
-  distDir: 'dist',
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-}
-
-module.exports = {
-  trailingSlash: true,
-}
 
 module.exports = nextConfig
+
+/** @type {import('next').NextConfig} */
+const webpack = require("webpack");
+const nextConfig = {
+  distDir: 'dist',
+  trailingSlash: true,
+  output: 'export',
+  reactStrictMode: true,
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.plugins.push(
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+      })
+    );
+    return config;
+  },
+};
+
+module.exports = nextConfig;
