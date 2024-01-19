@@ -19,4 +19,19 @@ const nextConfig = {
 module.exports = {
   exportTrailingSlash: true,
 }
+module.exports = {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/services': { page: '/services'},
+      'contracts': { page: '/contracts'},
+      '/contact-us': { page: '/contact-us' },
+    }
+  },
+}
+
 module.exports = nextConfig;
