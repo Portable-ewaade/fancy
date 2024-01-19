@@ -2,14 +2,14 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Message from "./Message";
 
-import Select from "react-select";
+// import Select from "react-select";
 // import styles from "@/styles/contact.module.css";
 
 export const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(0);
   const [formError, setFormError] = useState("");
-  const [selectedOptions, setSelectedOptions] = useState([]);
+  // const [selectedOptions, setSelectedOptions] = useState([]);
 
   const form = useRef(null);
 
@@ -31,7 +31,7 @@ export const ContactUs = () => {
 
     const isFormValid = requiredFields.every((field) => {
 
-      const fieldValue = form.current[field].value.trim();
+      const fieldValue = form.current[field];
       return fieldValue !== "";
     });
 
@@ -48,7 +48,7 @@ export const ContactUs = () => {
         "service_rcgqlja",
         "template_cv4yida",
         formElement, // Pass the form element here
-        // "q5csQGKeI6w3R0Til"
+        "h323G-r1G3JnKE4c-"
       )
       .then(
         (result) => {
@@ -71,41 +71,51 @@ export const ContactUs = () => {
 
   return (
     <>
-      <main className="grid_container h-screen mt-4 relative">
+      <main className="grid_container h-[88.5vh] mt-4 relative">
         <section className="wrapper box-sec mx-auto absolute bottom-20">
           <div className="card w-1/2 mx-auto my-8 p-10 shadow-lg bg-white text-black rounded-lg">
             <form className="" onSubmit={handleSubmit} ref={form}>
               {step === 0 && (
                 <>
-                  <label className='font-normal' htmlFor="inputFirstName">First Name</label>
+                  <label className="font-normal" htmlFor="inputFirstName">
+                    First Name
+                  </label>
                   <input
                     type="text"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="first_name"
                     placeholder="Enter your first name"
                   />
-                  <label className='font-normal' htmlFor="inputLastName">Last Name</label>
+                  <label className="font-normal" htmlFor="inputLastName">
+                    Last Name
+                  </label>
                   <input
                     type="text"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="last_name"
                     placeholder="Enter your Last name"
                   />
-                  <label className='font-normal' htmlFor="inputEmailAddress">Email Address</label>
+                  <label className="font-normal" htmlFor="inputEmailAddress">
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="email_address"
                     placeholder="Enter your email address"
                   />
-                  <label className='font-normal' htmlFor="inputPhoneNumber">Phone Number</label>
+                  <label className="font-normal" htmlFor="inputPhoneNumber">
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="phone_number"
                     placeholder="Enter your valid phone number"
                   />
-                  <label className='font-normal' htmlFor="comapanyName">Comapany's Name</label>
+                  <label className="font-normal" htmlFor="comapanyName">
+                    Comapany's Name
+                  </label>
                   <input
                     type="text"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
@@ -114,7 +124,9 @@ export const ContactUs = () => {
                   />
 
                   <div className="">
-                    <label className='font-normal' htmlFor="message">Message</label>
+                    <label className="font-normal" htmlFor="message">
+                      Message
+                    </label>
                     <div className="form-floating">
                       <textarea
                         className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:px-2 py-1 focus:ring-0 sm:text-sm sm:leading-6 h-[8rem]"
@@ -138,7 +150,9 @@ export const ContactUs = () => {
                 </>
               )}
             </form>
-            {formError && <div className="text-danger fs-6">{formError}</div>}
+            {formError && (
+              <div className="text-danger text-sm">{formError}</div>
+            )}
             {step === 1 && (
               <>
                 <Message
