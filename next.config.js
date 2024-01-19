@@ -2,7 +2,7 @@
 const webpack = require("webpack");
 const nextConfig = {
   distDir: 'dist',
-  trailingSlash: true,
+  exportTrailingSlash: true,
   output: 'export',
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -16,5 +16,7 @@ const nextConfig = {
     return config;
   },
 };
-
+module.exports = {
+  exportTrailingSlash: true,
+}
 module.exports = nextConfig;
