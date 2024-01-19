@@ -24,7 +24,7 @@ const Banner = () => {
           />
         </div>
 
-        <div className="absolute end-0 top-10">
+        <div className="absolute end-0 top-12">
           <img
             src="/assets/three-circles.png"
             alt="logo"
