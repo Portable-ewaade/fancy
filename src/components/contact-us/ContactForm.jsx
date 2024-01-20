@@ -1,15 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Message from "./Message";
-
-// import Select from "react-select";
-// import styles from "@/styles/contact.module.css";
+import Banner from "./Banner";
 
 export const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(0);
   const [formError, setFormError] = useState("");
-  // const [selectedOptions, setSelectedOptions] = useState([]);
 
   const form = useRef(null);
 
@@ -26,12 +23,11 @@ export const ContactUs = () => {
       "email_address",
       "phone_number",
       "company_name",
-      "Message",
+      "message",
     ];
 
     const isFormValid = requiredFields.every((field) => {
-
-      const fieldValue = form.current[field];
+      const fieldValue = form.current[field].value.trim();
       return fieldValue !== "";
     });
 
@@ -67,15 +63,17 @@ export const ContactUs = () => {
       );
   };
 
-
-
   return (
     <>
-      <main className="grid_container h-[88.5vh] mt-4 relative">
-        <section className="wrapper box-sec mx-auto absolute bottom-20">
-          <div className="card w-1/2 mx-auto my-8 p-10 shadow-lg bg-white text-black rounded-lg">
-            <form className="" onSubmit={handleSubmit} ref={form}>
-              {step === 0 && (
+      {step === 0 ? <Banner /> : ""}
+      <main className="grid_container mt-4 relative h-[95vh]">
+        <section className="wrapper">
+          <div className=" absolute box-sec mx-auto bottom-0">
+            {step === 0 && (
+              <form
+                className="card w-1/2 mx-auto my-8 p-10 shadow-lg bg-white text-black rounded-lg"
+                onSubmit={handleSubmit}
+                ref={form}>
                 <>
                   <label className="font-normal" htmlFor="inputFirstName">
                     First Name
@@ -119,7 +117,7 @@ export const ContactUs = () => {
                   <input
                     type="text"
                     className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
-                    name="company_namee"
+                    name="company_name"
                     placeholder="Enter your company or business name"
                   />
 
@@ -148,21 +146,23 @@ export const ContactUs = () => {
                     </button>
                   </div>
                 </>
-              )}
-            </form>
-            {formError && (
-              <div className="text-danger text-sm">{formError}</div>
-            )}
-            {step === 1 && (
-              <>
-                <Message
-                  title={`Thank You for Contacting Us.`}
-                  status="success"
-                  buttonText="Go Back To Home Page"
-                />
-              </>
+                {formError && (
+                  <div className="text-[red]  mt-2">{formError}</div>
+                )}
+              </form>
             )}
           </div>
+
+
+        {step === 1 && (
+          <>
+            <Message
+              title={`Thank You for Contacting Us.`}
+              status="success"
+              buttonText="Go Back To Home Page"
+            />
+          </>
+        )}
         </section>
       </main>
     </>

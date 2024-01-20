@@ -1,13 +1,13 @@
 import React from "react";
 import { FooterBlue, Navbar } from "@/components/common";
-import { Banner, ContactForm } from "@/components/contact-us";
+import { ContactForm } from "@/components/contact-us";
 
 const index = () => {
   return (
     <main>
       <Navbar />
-      <Banner />
-    <ContactForm /> 
+      {/* <Banner /> */}
+      <ContactForm />
       <FooterBlue />
     </main>
   );

@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { linkData } from "@/data/mockData";
 
 const navigation = [
   { name: "About Us", href: "about", current: true },
@@ -21,7 +22,7 @@ export default function Example() {
   return (
     <Disclosure as="nav" className="grid_container">
       {({ open }) => (
-        <section className="navbar_container md:px-10 shadow-xl">
+        <section className="navbar_container md:px-10 shadow-xl ">
           <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1  items-center">
@@ -51,70 +52,37 @@ export default function Example() {
               <div className="flex flex-shrink-0 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      // <Link
-                      //   href={item.href}
-                      //   className={`text-black nav-link hover:text-color2 my-3 ${
-                      //     router.pathname === item.url ? "active" : ""
-                      //   }`}
-                      //   passHref
-                      // >
-                      //   {item.name}
-                      // </Link>
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-color"
-                            : "text-black hover:text-color2 ",
-                          " px-3 py-2 text-md font-semibold"
-                        )}
-                        aria-current={item.current ? "page" : undefined}>
-                        {item.name}
-                      </a>
+                    {linkData.map((link, index) => (
+                      <ul className="nav-item" key={index}>
+                        <Link
+                          href={link.url}
+                          className={`font-[550] mx-3 ${
+                            router.pathname === link.url ? "active" : ""
+                          }`}
+                          passHref>
+                          {link.title}
+                        </Link>
+                      </ul>
                     ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <Link
-            href={item.href}
-            className={`text-black nav-link mx-3 ${
-              router.pathname === item.url ? "active" : ""
-            }`}
-            passHref
-          >
-            {item.name}
-          </Link> */}
-          {/* <a
-            key={item.name}
-            href={item.href}
-            className={classNames(
-              item.current ? "text-color2" : "text-black hover:text-color2",
-              " px-3 py-2 text-md font-bold"
-            )}
-            aria-current={item.current ? "page" : undefined}
-          >
-            {item.name}
-          </a> */}
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-bold "
-                  )}
-                  aria-current={item.current ? "page" : undefined}>
-                  {item.name}
-                </Disclosure.Button>
+
+          <Disclosure.Panel className="sm:hidd">
+            <div className="space-y-5 px-2 pb-3 pt-2">
+              {linkData.map((link, index) => (
+                <ul className="nav-item" key={index}>
+                  <Link
+                    href={link.url}
+                    className={`font-[550] mx-3 ${
+                      router.pathname === link.url ? "active" : ""
+                    }`}
+                    passHref>
+                    {link.title}
+                  </Link>
+                </ul>
               ))}
             </div>
           </Disclosure.Panel>
@@ -123,3 +91,7 @@ export default function Example() {
     </Disclosure>
   );
 }
+
+//  "bg-gray-900 text-white"
+//                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
+//                     "block rounded-md px-3 py-2 text-base font-bold "
