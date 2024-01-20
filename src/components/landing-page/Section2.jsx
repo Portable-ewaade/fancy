@@ -29,14 +29,19 @@ const Section2 = () => {
           <img
             src="/assets/home-img1.png"
             alt="home image"
-            className="mx-auto pt-10"
+            className="mx-auto pt-10 hidden md:block"
+            height={500}
+          />
+          <img
+            src="/assets/mobile-home-img.png"
+            alt="home image"
+            className="mx-auto pt-10 md:hidden"
             height={500}
           />
 
           <a
             href="#"
-            className="text-color font-extrabold text-xs underline underline-offset-4"
-          >
+            className="text-color font-extrabold text-xs underline underline-offset-4">
             See more about us
           </a>
         </div>

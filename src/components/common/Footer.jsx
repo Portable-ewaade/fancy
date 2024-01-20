@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="grid-container text-lg ">
       <div className="wrapper box-sec py-5 ">
-        <div className="flex">
+        <div className="md:flex">
           <div className="flex-1">
             <Link href="/">
               <img
@@ -16,12 +16,12 @@ const Footer = () => {
               />
             </Link>
             {/* <br /> */}
-            <p className=" font-light text-sm text-color">
+            <p className="font-semibold md:font-light text-sm text-color">
               Transforming behaviourial <br /> health.
             </p>
           </div>
 
-          <div className="flex-1 ms-10">
+          <div className="flex-1 md:ms-10">
             <div className="flex ">
               <div className="grow ">
                 <ul>

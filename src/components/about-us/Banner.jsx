@@ -43,13 +43,13 @@ const Banner = () => {
 
   return (
     <>
-      <section classNameName="grid_container relative">
+      <section className="grid_container relative">
         <div className="wrapper z-10">
-        <div className=" text-white absolute top-1/3 md:start-20 start-15 z-10">
-          <h1 className="text-5xl font-extrabold leading-tight">
-            Empowering innovation in <br /> mental health.
+        <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-4 z-10">
+          <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
+            Empowering innovation in <br className="hidden md:block" /> mental health.
           </h1>
-          <p className="text-xl font-bold tracking-wide mt-5">
+          <p className="md:text-xl font-bold tracking-wide mt-5">
             Pioneering Solutions at the Intersection of Data and{" "}
             <br className="hidden md:block" /> Behavioral Health.
           </p>
@@ -61,33 +61,33 @@ const Banner = () => {
           animateOut={"fadeOut"}
           autoplay={true}
           autoplaySpeed={1000}
-          className="bg-[#0A0A8C] h-[85vh] mt-16 z-0">
+          className="bg-[#0A0A8C] md:h-[85vh] h-[70vh] mt-16 z-0">
           <div className="item">
             <img
               src="/assets/about-banner.png"
               alt="about carousel image"
-              className=" w-full h-[85vh]"
+              className=" w-full md:h-[85vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
               src="/assets/about-img-2.png"
               alt="about carousel image"
-              className=" w-full h-[85vh]"
+              className=" w-full md:h-[85vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
               src="/assets/about-img-3.png"
               alt="about carousel image"
-              className=" w-full h-[85vh]"
+              className=" w-full md:h-[85vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
               src="/assets/about-img-4.png"
               alt="about carousel image"
-              className=" w-full h-[85vh]"
+              className=" w-full md:h-[85vh] h-[70vh]"
             />
           </div>
         </OwlCarousel>
