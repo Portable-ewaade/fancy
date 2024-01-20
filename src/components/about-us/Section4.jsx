@@ -85,7 +85,6 @@ const Section4 = () => {
             src="/assets/dark-blue-star.png"
             alt="logo"
             className="md:w-[30px] w-[35px]"
-            // width={30}
           />
         </div>
         <div className="absolute end-0 bottom-0">
@@ -93,7 +92,6 @@ const Section4 = () => {
             src="/assets/dark-blue-btm.png"
             alt="logo"
             className="md:w-[600px] w-[250px]"
-            // width={500}
           />
         </div>
       </main>
