@@ -26,10 +26,10 @@
   background-color: #E4F7F4;
 }
 a.active{
-  color:#00B4FE !important;
+  color:#0A0A8C !important;
 }
 a:hover{
-  color:#00B4FE !important;
+  color:#0A0A8C !important;
 }
 h3 {
   background: linear-gradient(to right, #0A0A8C, #00B4FE, #00B4FE);
