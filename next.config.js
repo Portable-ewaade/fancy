@@ -1,15 +1,37 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
+const webpack = require("webpack");
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
   distDir: 'dist',
+  exportTrailingSlash: true,
   output: 'export',
-  images: {
-    unoptimized: true,
+  reactStrictMode: true,
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.plugins.push(
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+      })
+    );
+    return config;
+  },
+};
+module.exports = {
+  exportTrailingSlash: true,
+}
+module.exports = {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/services': { page: '/services'},
+      'contracts': { page: '/contracts'},
+      '/contact-us': { page: '/contact-us' },
+    }
   },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

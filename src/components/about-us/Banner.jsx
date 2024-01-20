@@ -1,27 +1,100 @@
-import React from "react";
+import React, { useEffect } from "react";
+import dynamic from "next/dynamic"; // Import dynamic for client-side rendering
+
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+  // Client-side-only code
+  window.$ = window.jQuery = require("jquery");
+}
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "animate.css";
+// import dynamic from "next/dynamic";
 
 const Banner = () => {
+  const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+    ssr: false,
+  });
+  useEffect(() => {}, []);
+
+  const Responsive = {
+    nav: false,
+    dots: false,
+
+    0: {
+      items: 1,
+      nav: false,
+      dots: false,
+      margin: 5,
+    },
+    768: {
+      items: 1,
+      nav: false,
+      dots: false,
+      margin: 10,
+    },
+    1024: {
+      items: 1,
+      nav: false,
+      dots: false,
+      margin: 20,
+    },
+  };
+
   return (
-    <section
-      className="grid_container relative bg-[#0A0A8C]"
-      style={{
-        backgroundImage: 'url("/assets/about-banner.png")',
-        backgroundRepeat: "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "90vh",
-      }}
-    >
-      <div className="wrapper text-white absolute top-1/3 md:start-20 start-15 mt-16 ">
-        <h1 className="text-5xl font-extrabold leading-tight">
-          Empowering innovation in <br /> mental health.
-        </h1>
-        <p className="text-xl font-bold tracking-wide mt-5">
-          Pioneering Solutions at the Intersection of Data and{" "}
-          <br className="hidden md:block" /> Behavioral Health.
-        </p>
-      </div>
-    </section>
+    <>
+      <section classNameName="grid_container relative">
+        <div className="wrapper z-10">
+        <div className=" text-white absolute top-1/3 md:start-20 start-15 z-10">
+          <h1 className="text-5xl font-extrabold leading-tight">
+            Empowering innovation in <br /> mental health.
+          </h1>
+          <p className="text-xl font-bold tracking-wide mt-5">
+            Pioneering Solutions at the Intersection of Data and{" "}
+            <br className="hidden md:block" /> Behavioral Health.
+          </p>
+        </div>
+
+        <OwlCarousel
+          responsive={Responsive}
+          loop={true}
+          animateOut={"fadeOut"}
+          autoplay={true}
+          autoplaySpeed={1000}
+          className="bg-[#0A0A8C] h-[85vh] mt-16 z-0">
+          <div className="item">
+            <img
+              src="/assets/about-banner.png"
+              alt="about carousel image"
+              className=" w-full h-[85vh]"
+            />
+          </div>
+          <div className="item">
+            <img
+              src="/assets/about-img-2.png"
+              alt="about carousel image"
+              className=" w-full h-[85vh]"
+            />
+          </div>
+          <div className="item">
+            <img
+              src="/assets/about-img-3.png"
+              alt="about carousel image"
+              className=" w-full h-[85vh]"
+            />
+          </div>
+          <div className="item">
+            <img
+              src="/assets/about-img-4.png"
+              alt="about carousel image"
+              className=" w-full h-[85vh]"
+            />
+          </div>
+        </OwlCarousel>
+        </div>
+
+      </section>
+    </>
   );
 };
 

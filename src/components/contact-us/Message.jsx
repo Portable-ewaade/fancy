@@ -6,29 +6,19 @@ const Message = ({ title, buttonText }) => {
   useEffect(() => {}, []);
 
   return (
-    <section className="grid-container"
-    style={{
-      height: "100vh",
-      marginTop: '10rem'
-    }}>
-      <main className=''>
-        <div
-          style={{
-            backgroundColor: "#fff" ? "#fff" : "",
-            padding: "0.5rem 0.5rem" ? "0.5rem 0.5rem" : "",
-            // borderRadius: "1.5rem" ? "1.5rem" : "",
-          }}
-          className=""
-        >
+    <section className="grid-container">
+      <main className="wrapper mt-20 pt-20">
+        <div className="text-black">
           <div className=" text-center">
-            <h5 className="fw-bold">{title}</h5>
-            <p className=" fs-xsmall">
+            <h1 className="font-bold text-3xl mb-3">{title}</h1>
+            <p className=" mt-4 mb-8">
               Our team of experts will get in touch with you in no time.
             </p>
-
-            <Link href="/" className="text-color fs-small lag-btnn">
-              {buttonText ? buttonText : "Home"}
-            </Link>
+            <div className="bg-[#0A0A8C] py-2 w-[60vh] text-white rounded mx-auto text-center hover:text-white">
+              <Link href="/" className="text-normal font-bold ">
+                {buttonText ? buttonText : "Home"}
+              </Link>
+            </div>
           </div>
         </div>
       </main>
