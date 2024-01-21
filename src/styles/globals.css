@@ -48,10 +48,7 @@ h3 {
 .wrapper {
   grid-column: 1 / span 12;
 }
-/* section {
-  height: auto !important;
-  scroll-snap-align: start;
-} */
+
 .navbar_container {
   background-color: #fff;
   grid-column: 1 / span 12;

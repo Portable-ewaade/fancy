@@ -11,7 +11,7 @@ const Banner = () => {
         backgroundPosition: "center",
         height: "90vh",
       }}>
-      <div className="wrapper text-black absolute top-1/3 md:start-20 start-15 mt-16 ">
+      <div className="wrapper text-black absolute top-1/3 md:start-20 start-15 md:mt-16 ">
         <h1 className="text-5xl font-extrabold leading-tight">
           Flexible collaboration <br /> models.
         </h1>
