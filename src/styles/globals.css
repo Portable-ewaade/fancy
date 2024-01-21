@@ -28,9 +28,9 @@
 a.active{
   color:#0A0A8C !important;
 }
-a:hover{
+/* .nav-item a:hover{
   color:#0A0A8C !important;
-}
+} */
 h3 {
   background: linear-gradient(to right, #0A0A8C, #00B4FE, #00B4FE);
   -webkit-text-fill-color: transparent;
@@ -48,10 +48,7 @@ h3 {
 .wrapper {
   grid-column: 1 / span 12;
 }
-/* section {
-  height: auto !important;
-  scroll-snap-align: start;
-} */
+
 .navbar_container {
   background-color: #fff;
   grid-column: 1 / span 12;

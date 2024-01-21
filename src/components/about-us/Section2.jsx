@@ -43,16 +43,16 @@ const Section2 = () => {
           <img
             src="/assets/blue-left.png"
             alt="logo"
-            className=""
-            width={500}
+            className="md:w-[550px] w-[250px]"
+            // width={500}
           />
         </div>
         <div className="absolute end-0 top-0">
           <img
             src="/assets/blue-right.png"
             alt="logo"
-            className=""
-            width={500}
+            className="md:w-[550px] w-[250px]"
+            // width={500}
           />
         </div>
       </main>

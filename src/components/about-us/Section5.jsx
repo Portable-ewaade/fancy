@@ -4,9 +4,9 @@ const Section5 = () => {
   return (
     <section className="grid_container bg-color2 relative  text-white text-lg">
       <main className="wrapper box-sec">
-        <div className="flex">
-          <div className="flex-1 mt-20 pt-10">
-            <h1 className="font-extrabold text-3xl mt-20 mb-5">
+        <div className="md:flex">
+          <div className="md:flex-1 md:mt-20 md:pt-10">
+            <h1 className="font-extrabold text-3xl mt-20 mb-5 text-center md:text-start">
               Our Impact and Commitment
             </h1>
             <p className="font-normal mt-5 tracking-wide md:w-3/5 ">
@@ -19,18 +19,18 @@ const Section5 = () => {
             </p>
           </div>
 
-          <div className="flex mt-7 absolute end-0">
+          <div className="md:flex mt-14 md:absolute end-0">
             <img
               src="/assets/big-logo-white.png"
               alt="home image"
-              className=""
-              width={450}
+              className="w-[450px]"
+              // width={450}
             />
           </div>
         </div>
 
         <div>
-          <div className=" pt-10 pb-14">
+          <div className=" md:pt-10 pb-14">
             <h1 className="font-extrabold text-3xl mt-20 mb-5">
               Our Core Values
             </h1>
@@ -40,8 +40,8 @@ const Section5 = () => {
           </div>
 
           <div className="pb-10 ">
-            <div className="flex">
-              <div className="flex-1 my-8 me-8 p-5 shadow-lg bg-white text-black rounded-lg">
+            <div className="md:flex">
+              <div className="flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
                 <h1 className="text-color text-2xl font-bold mt-1">
                   Innovation
                 </h1>
@@ -51,7 +51,7 @@ const Section5 = () => {
                   research boundaries, aiming for transformative change.
                 </p>
               </div>
-              <div className="flex-1 m-8 p-5 shadow-lg bg-white text-black rounded-lg">
+              <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
                 <h1 className="text-color text-2xl font-bold mt-2">
                   Collaboration
                 </h1>
@@ -61,7 +61,7 @@ const Section5 = () => {
                   groups, to create powerful solutions together
                 </p>
               </div>
-              <div className="flex-1 m-8 p-5 shadow-lg bg-white text-black rounded-lg">
+              <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
                 <h1 className="text-color text-2xl font-bold mt-2">
                   Compassion
                 </h1>

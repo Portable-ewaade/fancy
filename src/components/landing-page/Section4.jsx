@@ -22,28 +22,35 @@ const Section4 = () => {
           </p>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <img
             src="/assets/home-img2.png"
             alt="home image"
             className="mx-auto pt-10"
           />
         </div>
-
-        <div className="absolute end-10 top-10">
+        <div className="md:hidden">
           <img
-            src="/assets/small-star.png"
-            alt="logo"
-            className=""
-            width={30}
+            src="/assets/mobile-home-img-2.png"
+            alt="home image"
+            className="mx-auto pt-10"
           />
         </div>
-        <div className="absolute start-5 inset-y-1/2">
+
+        <div className="absolute md:end-10 end-2 md:top-10 top-5">
           <img
             src="/assets/small-star.png"
             alt="logo"
-            className=""
-            width={30}
+            className="md:w-[30px] w-[35px]"
+            // width={30}
+          />
+        </div>
+        <div className="absolute md:start-5 md:inset-y-1/2 start-1 bottom-2">
+          <img
+            src="/assets/small-star.png"
+            alt="logo"
+            className="md:w-[30px] w-[35px]"
+            // width={30}
           />
         </div>
       </main>

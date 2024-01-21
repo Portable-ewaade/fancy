@@ -9,13 +9,14 @@ const Message = ({ title, buttonText }) => {
     <section className="grid-container">
       <main className="wrapper mt-20 pt-20">
         <div className="text-black">
-          <div className=" text-center">
+          <div className="text-center">
             <h1 className="font-bold text-3xl mb-3">{title}</h1>
             <p className=" mt-4 mb-8">
-              Our team of experts will get in touch with you in no time.
+              Our team of experts will get in touch <br />
+              with you in no time.
             </p>
-            <div className="bg-[#0A0A8C] py-2 w-[60vh] text-white rounded mx-auto text-center hover:text-white">
-              <Link href="/" className="text-normal font-bold ">
+            <div className="bg-[#0A0A8C] py-2 md:w-[60vh] w-[50vh] text-white rounded mx-auto text-center hover:text-white">
+              <Link href="/" className="text-normal font-bold hover:text-white">
                 {buttonText ? buttonText : "Home"}
               </Link>
             </div>
