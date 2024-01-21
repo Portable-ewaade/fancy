@@ -53,10 +53,10 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {linkData.map((link, index) => (
-                      <ul className="nav-item" key={index}>
+                      <ul className="nav-item " key={index}>
                         <Link
                           href={link.url}
-                          className={`font-[550] mx-3 ${
+                          className={`font-[550] mx-3 hover:text-[#0A0A8C] ${
                             router.pathname === link.url ? "active" : ""
                           }`}
                           passHref>

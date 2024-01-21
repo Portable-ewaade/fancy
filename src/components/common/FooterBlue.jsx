@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <section className="grid-container bg-[#0A0A8C] text-white text-lg">
       <div className="wrapper box-sec py-5 ">
-        <div className="flex">
-          <div className="flex-1">
+        <div className="md:flex">
+          <div className="md:flex-1">
             <Link href="/">
               <img
                 src="/assets/nav-logo-white.png"
@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex-1 ms-10">
+          <div className="md:flex-1 md:ms-10">
             <div className="flex ">
               <div className="grow ">
                 <ul>
