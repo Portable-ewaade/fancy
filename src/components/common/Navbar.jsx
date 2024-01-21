@@ -70,7 +70,7 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="z-10">
+          <Disclosure.Panel className="z-10 ">
             <div className="space-y-10 px-2 pb-3 pt-2 h-screen text-white w-2/3 end-0 absolute bg-gradient-to-r from-blue-900 to-blue-700 backdrop-brightness-100  shadow-lg z-10">
               <Link href="/" className="font-[550] px-3 ">
                 {" "}

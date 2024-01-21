@@ -16,7 +16,7 @@ const Footer = () => {
               />
             </Link>
             {/* <br /> */}
-            <p className=" font-light text-sm ">
+            <p className=" md:font-light font-semibold text-sm ">
               Transforming behaviourial <br /> health.
             </p>
           </div>
@@ -43,10 +43,7 @@ const Footer = () => {
               </div>
               <div className="grow ">
                 <ul>
-                  <h6 className="font-extrabold mt-8 mb-4 ">
-                    {" "}
-                    Company
-                  </h6>
+                  <h6 className="font-extrabold mt-8 mb-4 "> Company</h6>
                 </ul>
                 <ul className="my-3">
                   <Link href="/contact" className="font-light">
@@ -66,10 +63,7 @@ const Footer = () => {
               </div>
               <div className="grow ">
                 <ul>
-                  <h6 className="font-extrabold mt-8 mb-4 ">
-                    {" "}
-                    Connect
-                  </h6>
+                  <h6 className="font-extrabold mt-8 mb-4 "> Connect</h6>
                 </ul>
                 <ul className="my-3">
                   <Link href="#" className="font-light">
@@ -92,7 +86,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-xs mb-1 mt-20">
-          &copy; 2023 MHRI. All rights reserved.
+          &copy; 2024 Motive Health Research Initiative. All rights reserved.
         </div>
       </div>
     </section>

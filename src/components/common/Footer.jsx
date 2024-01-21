@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-xs mb-1 mt-20">
-          &copy; 2023 MHRI. All rights reserved.
+          &copy; 2024 Motive Health Research Initiative. All rights reserved.
         </div>
       </div>
     </section>
