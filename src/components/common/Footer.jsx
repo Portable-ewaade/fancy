@@ -25,18 +25,22 @@ const Footer = () => {
             <div className="flex ">
               <div className="grow ">
                 <ul>
-                  <h6 className="font-extrabold mt-8 mb-4 text-color">
+                  <h6 className="font-extrabold mt-8 mb-4 text-color ">
                     {" "}
                     Terms & Privacy
                   </h6>
                 </ul>
                 <ul className="my-3">
-                  <Link href="/privacy" className="font-light">
+                  <Link
+                    href="/privacy"
+                    className="font-light hover:text-[#0A0A8C]">
                     Privacy Policy
                   </Link>
                 </ul>
                 <ul>
-                  <Link href="/terms" className="font-light">
+                  <Link
+                    href="/terms"
+                    className="font-light hover:text-[#0A0A8C]">
                     Terms of Use
                   </Link>
                 </ul>
@@ -49,17 +53,23 @@ const Footer = () => {
                   </h6>
                 </ul>
                 <ul className="my-3">
-                  <Link href="/contact" className="font-light">
+                  <Link
+                    href="/contact-us"
+                    className="font-light hover:text-[#0A0A8C]">
                     Contact Us
                   </Link>
                 </ul>
                 <ul className="my-3">
-                  <Link href="/about" className="font-light">
+                  <Link
+                    href="/about"
+                    className="font-light hover:text-[#0A0A8C]">
                     About Us
                   </Link>
                 </ul>
                 <ul>
-                  <Link href="/services" className="font-light">
+                  <Link
+                    href="/services"
+                    className="font-light hover:text-[#0A0A8C]">
                     Services
                   </Link>
                 </ul>
@@ -72,17 +82,17 @@ const Footer = () => {
                   </h6>
                 </ul>
                 <ul className="my-3">
-                  <Link href="#" className="font-light">
+                  <Link href="#" className="font-light hover:text-[#0A0A8C]">
                     Instagram
                   </Link>
                 </ul>
                 <ul className="my-3">
-                  <Link href="#" className="font-light">
+                  <Link href="#" className="font-light hover:text-[#0A0A8C]">
                     Twitter
                   </Link>
                 </ul>
                 <ul>
-                  <Link href="#" className="font-light">
+                  <Link href="#" className="font-light hover:text-[#0A0A8C]">
                     Linkedin
                   </Link>
                 </ul>

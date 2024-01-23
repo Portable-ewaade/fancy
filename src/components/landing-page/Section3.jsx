@@ -57,8 +57,8 @@ const Section3 = () => {
             </div>
             <div className="flex-1 mt-10">
               <a
-                href="/about"
-                className=" text-color font-extrabold text-lg underline underline-offset-4">
+                href="/services"
+                className=" text-color font-extrabold text-lg underline underline-offset-4 hover:text-[#0A0A8C]">
                 See more details about our services
               </a>
             </div>
@@ -69,7 +69,7 @@ const Section3 = () => {
           <img
             src="/assets/half-circle-left.png"
             alt="logo"
-            className="md:w-[140px] w-[100px]"
+            className="md:w-[95px] w-[43px]"
             // width={140}
           />
         </div>
@@ -77,7 +77,7 @@ const Section3 = () => {
           <img
             src="/assets/half-cicle-right.png"
             alt="logo"
-            className="w-[80px]"
+            className="md:w-[80px] w-[40px]"
             // width={80}
           />
         </div>

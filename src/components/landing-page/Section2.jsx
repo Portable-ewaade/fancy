@@ -40,8 +40,8 @@ const Section2 = () => {
           />
 
           <a
-            href="#"
-            className="text-color font-extrabold text-xs underline underline-offset-4">
+            href="/about"
+            className="text-color font-extrabold text-xs underline underline-offset-4 hover:text-[#0A0A8C]">
             See more about us
           </a>
         </div>
