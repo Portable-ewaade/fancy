@@ -25,19 +25,19 @@ const Banner = () => {
       items: 1,
       nav: false,
       dots: false,
-      margin: 5,
+      margin: 0,
     },
     768: {
       items: 1,
       nav: false,
       dots: false,
-      margin: 10,
+      margin: 0,
     },
     1024: {
       items: 1,
       nav: false,
       dots: false,
-      margin: 20,
+      margin: 0,
     },
   };
 

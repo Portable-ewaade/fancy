@@ -209,7 +209,7 @@ const Section2 = () => {
           <img
             src="/assets/half-circle-left.png"
             alt="design"
-            className="md:w-[155px] w-[90px]"
+            className="md:w-[95px] w-[90px]"
             // width={155}
           />
         </div>

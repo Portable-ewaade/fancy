@@ -20,7 +20,7 @@ function classNames(...classes) {
 export default function Example() {
   const router = useRouter(); // Use the useRouter hook
   return (
-    <Disclosure as="nav" className="grid_container">
+    <Disclosure as="nav" className="grid_container ">
       {({ open }) => (
         <section className="navbar_container md:px-10 shadow-xl ">
           <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 ">
@@ -56,7 +56,7 @@ export default function Example() {
                       <ul className="nav-item " key={index}>
                         <Link
                           href={link.url}
-                          className={`font-[550] mx-3 hover:text-[#0A0A8C] ${
+                          className={`font-[550] text-color mx-3 hover:text-[#0A0A8C] ${
                             router.pathname === link.url ? "active" : ""
                           }`}
                           passHref>
