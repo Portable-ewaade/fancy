@@ -2,7 +2,7 @@ import React from "react";
 
 const Section4 = () => {
   return (
-    <section className="grid_container bg-color relative pb-16 text-lg">
+    <section className="grid_container bg-color relative pb-16 text-lg py-10">
       <main className="wrapper box-sec">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
@@ -26,7 +26,7 @@ const Section4 = () => {
           <img
             src="/assets/home-img2.png"
             alt="home image"
-            className="mx-auto pt-10"
+            className="mx-auto pt-10 pb-10"
           />
         </div>
         <div className="md:hidden">
