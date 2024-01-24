@@ -66,7 +66,7 @@ export const ContactUs = () => {
   return (
     <>
       {step === 0 ? <Banner /> : ""}
-      <main className="grid_container mt-4 lg:h-[100vh] md:h-[70vh] h-[95vh]">
+      <main className="grid_container mt-4 lg:h-[105vh] md:h-[70vh] h-[95vh]">
         <section className="wrapper">
           <div className="absolute box-sec mx-auto inset-y-[27rem] start-5 md:start-10">
             {step === 0 && (
