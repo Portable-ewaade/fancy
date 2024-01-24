@@ -24,11 +24,11 @@ export default function Example() {
       {({ open }) => (
         <section className="navbar_container md:px-10 shadow-xl ">
           <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 ">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex h-18 items-center justify-between">
               <div className="flex flex-1  items-center">
                 <a href="/">
                   <img
-                    className="h-16 w-auto"
+                    className="h-16 w-auto my-1"
                     src="/assets/nav-logo.png"
                     alt="motive health logo"
                   />
@@ -56,7 +56,7 @@ export default function Example() {
                       <ul className="nav-item " key={index}>
                         <Link
                           href={link.url}
-                          className={`font-[550] text-color mx-3 hover:text-[#0A0A8C] ${
+                          className={`font-[550] text-[#02021C] mx-3 hover:text-[#0A0A8C] ${
                             router.pathname === link.url ? "active" : ""
                           }`}
                           passHref>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Section5 = () => {
   return (
-    <section className="grid_container bg-color2 relative md:text-center text-white text-lg">
+    <section className="grid_container bg-color2 relative md:text-center text-white text-lg py-10">
       <main className="wrapper box-sec">
         <div className="">
           <h1 className="font-extrabold md:text-3xl text-xl mt-12 mb-7 text-center">

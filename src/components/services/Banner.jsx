@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="grid_container h-screen">
+    <section className="grid_container lg:pb-16">
       <main className="wrapper md:mt-10 ">
         <div className="md:text-center pt-20 ms-4 md:ms-0">
           <h1 className="md:text-6xl text-4xl font-extrabold text-color-banner pt-16 md:leading-tight leading-tight">

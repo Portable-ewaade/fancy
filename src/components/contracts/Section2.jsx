@@ -107,7 +107,7 @@ const Section2 = () => {
             />
           </div>
           <div className="flex-1 mt-16">
-            <h3 className="font-bold text-xl my-3">
+            <h3 className="font-bold text-2xl my-3">
               Government Contracts and RFPs
             </h3>
             <p className="w-6/7 text-lg ">
