@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
 
           <div className="md:flex-1 md:ms-10">
-            <div className="flex ">
+            <div className="md:flex ">
               <div className="grow ">
                 <ul>
                   <h6 className="font-extrabold mt-8 mb-4 ">
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center text-xs mb-1 mt-20">
+        <div className="text-center text-xs mb-1 md:mt-20 mt-10">
           &copy; 2024 Motive Health Research Initiative. All rights reserved.
         </div>
       </div>
