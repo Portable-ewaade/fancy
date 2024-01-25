@@ -41,7 +41,7 @@ const Footer = () => {
                   </Link>
                 </ul>
               </div>
-              <div className="grow ">
+              <div className="grow lg:ms-28">
                 <ul>
                   <h6 className="font-extrabold mt-8 mb-4 "> Company</h6>
                 </ul>
@@ -61,9 +61,9 @@ const Footer = () => {
                   </Link>
                 </ul>
               </div>
-              <div className="grow ">
+              <div className="grow lg:ms-28">
                 <ul>
-                  <h6 className="font-extrabold mt-8 mb-4 "> Connect</h6>
+                  <h6 className="font-extrabold mt-8 mb-4"> Connect</h6>
                 </ul>
                 <ul className="my-3">
                   <Link href="#" className="font-light">

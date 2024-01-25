@@ -5,7 +5,7 @@ const Section2 = () => {
     <section className="grid_container bg-white relative pb-16 z-0">
       <main className="wrapper box-sec">
         <div className="mb-10 z-10">
-          <h1 className="font-extrabold text-color text-center text-3xl mt-16 mb-4">
+          <h1 className="font-extrabold text-color text-center text-3xl mt-12 mb-4">
             Versatile <span className="text-color2">Partnership</span> Options
           </h1>
           <p className="md:text-center md:w-2/3 text-lg mx-auto">
@@ -149,7 +149,7 @@ const Section2 = () => {
               Customized Contracting Solutions
             </h3>
             <p className="md:w-4/5 text-lg">
-              Recognizing the diverse needs of our clients, MRI offers
+              Recognizing the diverse needs of our clients, MHRI offers
               customized contracting solutions. We collaborate with clients to
               tailor contract vehicles that best suit their requirements,
               ensuring a smooth and productive engagement.
