@@ -43,7 +43,7 @@ const Banner = () => {
   return (
     <section className="grid_container relative ">
       <div className="wrapper z-0">
-        <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
+        <div className=" text-color absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
           <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
             Flexible collaboration <br /> models.
           </h1>
@@ -58,33 +58,33 @@ const Banner = () => {
           animateOut={"fadeOut"}
           autoplay={true}
           autoplaySpeed={1000}
-          className="md:h-[77vh] h-[65vh] mt-16 z-0">
+          className="md:h-[82vh] h-[70vh] mt-16 z-0">
           <div className="item">
             <img
               src="/assets/contract-img-1.png"
               alt="about carousel image"
-              className=" w-full md:h-[77vh] h-[65vh]"
+              className=" w-full md:h-[82vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
               src="/assets/contract-img-2.png"
               alt="about carousel image"
-              className=" w-full md:h-[77vh] h-[65vh]"
+              className=" w-full md:h-[82vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
-              src="/assets/contract-img-2.png"
+              src="/assets/contract-img-3.png"
               alt="about carousel image"
-              className=" w-full md:h-[77vh] h-[65vh]"
+              className=" w-full md:h-[82vh] h-[70vh]"
             />
           </div>
           <div className="item">
             <img
               src="/assets/contract-img-4.png"
               alt="about carousel image"
-              className=" w-full md:h-[77vh] h-[65vh]"
+              className=" w-full md:h-[82vh] h-[70vh]"
             />
           </div>
         </OwlCarousel>
