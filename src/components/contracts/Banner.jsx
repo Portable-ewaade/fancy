@@ -43,7 +43,7 @@ const Banner = () => {
   return (
     <section className="grid_container relative ">
       <div className="wrapper z-0">
-        <div className=" text-color absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
+        <div className=" text-[#03032F] absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
           <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
             Flexible collaboration <br /> models.
           </h1>

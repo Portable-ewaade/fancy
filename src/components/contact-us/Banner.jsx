@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="grid_container relative lg:h-[80vh] h-[65vh] md:bg-[#03032F] bg-[#07075D]">
+    <section className="grid_container relative lg:h-[83vh] h-[65vh] md:bg-[#03032F] bg-[#07075D] mb-20">
       <main className="wrapper">
         <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-4 md:mt-12 mt-5">
           <h1 className="md:text-4xl text-3xl font-extrabold md:leading-tight leading-tight tracking-wide">
