@@ -5,36 +5,30 @@ const Section4 = () => {
     <section className="grid_container bg-[#CCF0FF] relative md:pb-16 ">
       <main className="wrapper box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
-          Human and Health Services Technology <br /> Consulting
+          Clinical Research Consulting
         </h1>
 
         <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">Healthcare Tech Advisory</h3>
-          <p className='font-medium text-lg'>
-            MHRI provides strategic guidance and implementation of technology
-            solutions tailored for improved healthcare delivery. We prioritize a
-            people-centric approach and operational efficiency.
-          </p>
-        </div>
-        <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">Healthcare Tech Guidance</h3>
-          <p className='font-medium text-lg'>
-            Our service offers expert advice and hands-on support in
-            implementing technology solutions to elevate healthcare services. We
-            focus on enhancing user experiences and service efficiency.
+          <h3 className="font-bold text-xl my-2">
+            Clinical Study Guidance Services
+          </h3>
+          <p className="font-medium text-lg">
+            Our clinical research consulting specializes in expert guidance for
+            conducting clinical studies, ensuring regulatory compliance, and
+            maximizing research effectiveness.
           </p>
         </div>
         <div className="md:w-3/5 mb-12">
           <h3 className="font-bold text-xl my-2">
-            Healthcare Tech Enhancement
+            Expert Assistance for Healthcare Studies
           </h3>
-          <p className='font-medium text-lg'>
-            MHRI's consultancy specializes in guiding and implementing
-            cutting-edge tech solutions within healthcare. Our emphasis is on a
-            people-centered approach and optimizing service efficiency.
+          <p className="font-medium text-lg">
+            We offer help and expertise in carrying out studies related to
+            healthcare, ensuring they follow rules and use the best methods to
+            get accurate results.
           </p>
         </div>
-
+       
         <div className="absolute end-0 top-0 z-0">
           <img
             src="/assets/half-circle-right-white.png"

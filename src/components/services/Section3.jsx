@@ -14,29 +14,37 @@ const Section3 = () => {
     >
       <main className="wrapper box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
-          Consulting
+          Research Project Management
         </h1>
 
         <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">Consulting Solution</h3>
-          <p className='font-medium text-lg'>
-            Our service offers expert guidance to individuals and organizations
-            seeking innovative mental health solutions. We use data-driven
-            insights and behavioral health expertise to provide strategic advice
-            for impactful outcomes.
+          <h3 className="font-bold text-xl my-2">Project Management</h3>
+          <p className="font-medium text-lg">
+            We create tailored service agreements for projects, short or
+            long-term. Working closely with clients, we strategize, research,
+            design interventions, and achieve measurable outcomes aligned with
+            their goals.
           </p>
         </div>
         <div className="md:w-3/5 mb-12">
           <h3 className="font-bold text-xl my-2">
-            Expert Advice for Better Mental Health Solution
+            Research Oversight and Coordination
           </h3>
-          <p className='font-medium text-lg'>
-            We provide advice and strategic guidance to people and organizations
-            looking for new and innovative solutions in mental health using
-            information and expertise in behavioral health.
+          <p className="font-medium text-lg">
+            Our project managers guide every stage of research projects using
+            behavioral health-aligned methods to achieve impactful outcomes.
           </p>
         </div>
-        
+        <div className="md:w-3/5 mb-12">
+          <h3 className="font-bold text-xl my-2">
+            Guiding and Organizing Research Projects
+          </h3>
+          <p className="font-medium text-lg">
+            We handle the organization and supervision of research projects,
+            making sure each step is well-planned and completed on time to
+            achieve meaningful results.
+          </p>
+        </div>
       </main>
     </section>
   );

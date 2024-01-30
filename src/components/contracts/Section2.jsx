@@ -169,7 +169,7 @@ const Section2 = () => {
           <img
             src="/assets/half-circle-left.png"
             alt="logo"
-            className="md:w-[140px] w-[65px]"
+            className="md:w-[140px] w-[25px]"
             width={140}
           />
         </div>
@@ -193,7 +193,7 @@ const Section2 = () => {
           <img
             src="/assets/half-cicle-right.png"
             alt="logo"
-            className="md:w-[180px] w-[100px] z-0"
+            className="md:w-[180px] w-[35px] z-0"
             // width={180}
           />
         </div>

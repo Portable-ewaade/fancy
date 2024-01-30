@@ -14,27 +14,36 @@ const Section5 = () => {
     >
       <main className="wrapper box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
-          Clinical Research Consulting
+          AI/ML Research and Development
         </h1>
 
         <div className="md:w-3/5 mb-12">
           <h3 className="font-bold text-xl my-2">
-            Clinical Study Guidance Services
+            Advanced Cognitive Computing
           </h3>
-          <p className='font-medium text-lg'>
-            Our clinical research consulting specializes in expert guidance for
-            conducting clinical studies, ensuring regulatory compliance, and
-            maximizing research effectiveness.
+          <p className="font-medium text-lg">
+            MHRI's AI/ML research and development service specializes in
+            utilizing Artificial Intelligence and Machine Learning methodologies
+            to drive groundbreaking solutions in mental health research and
+            intervention development.
           </p>
         </div>
         <div className="md:w-3/5 mb-12">
           <h3 className="font-bold text-xl my-2">
-            Expert Assistance for Healthcare Studies
+            Innovative Tech for Mental Health Improvement
           </h3>
-          <p className='font-medium text-lg'>
-            We offer help and expertise in carrying out studies related to
-            healthcare, ensuring they follow rules and use the best methods to
-            get accurate results.
+          <p className="font-medium text-lg">
+            We study and develop new ways of using computers to help with mental
+            health research and creating better treatments.
+          </p>
+        </div>
+        <div className="md:w-3/5 mb-12">
+          <h3 className="font-bold text-xl my-2">
+            AI-driven Mental Health Solution{" "}
+          </h3>
+          <p className="font-medium text-lg">
+            We explore AI/ML methodologies to pioneer innovative solutions in
+            mental health research and intervention development.
           </p>
         </div>
       </main>
