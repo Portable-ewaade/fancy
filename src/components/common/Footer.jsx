@@ -18,7 +18,7 @@ const Footer = () => {
               Transforming behaviourial <br /> health.
             </p>
             <Link
-              href="malto:marvellous@motivhealth.org"
+              href="mailto:marvellous@motivhealth.org"
               className="text-sm text-color"
             >
               marvellous@motivhealth.org
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="absolute end-0 md:inset-y-1/4 inset-y-1/2 animate__animated animate__bounce animate__infinite infinite">
+        <div className="hidden md:block absolute end-0 md:inset-y-1/4 inset-y-1/2 animate__animated animate__bounce animate__infinite infinite">
           <img
             src="/assets/contact-big-logo.png"
             alt=""

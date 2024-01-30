@@ -2,7 +2,7 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <section className="grid_container bg-color relative pb-16 ">
+    <section className="grid_container bg-color relative md:pb-16 pb-6">
       <main className="wrapper box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           Human and Health Services Technology <br /> Consulting

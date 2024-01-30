@@ -31,9 +31,17 @@ const Section2 = () => {
           </p>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <img
             src="/assets/about-img1.png"
+            alt="home image"
+            className="mx-auto pt-10"
+            // height={500}
+          />
+        </div>
+        <div className="md:hidden">
+          <img
+            src="/assets/about-img1-mobile.png"
             alt="home image"
             className="mx-auto pt-10"
             // height={500}

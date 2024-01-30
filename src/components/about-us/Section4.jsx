@@ -10,8 +10,8 @@ const Section4 = () => {
           </h1>
         </div>
 
-        <div className="grid grid-rows-4 grid-flow-col gap-4">
-          <div className="my-3">
+        <div className="md:grid grid-rows-4 grid-flow-col gap-4">
+          <div className="my-9 md:my-2">
             <h3 className="font-bold text-2xl my-2">
               Conducting Cutting-edge Research
             </h3>
@@ -22,7 +22,7 @@ const Section4 = () => {
               proven interventions for mental health challenges.
             </p>
           </div>
-          <div className="my-3">
+          <div className="my-9 md:my-2">
             <h3 className="font-bold text-2xl my-2">
               Developing Innovative Interventions
             </h3>
@@ -33,7 +33,7 @@ const Section4 = () => {
               diverse needs, fostering lasting recovery and well-being.
             </p>
           </div>
-          <div className="md:my-3">
+          <div className="my-9 md:my-2">
             <h3 className="font-bold text-2xl my-2">Community Partnerships</h3>
             <p className="md:w-5/6 md:text-lg">
               We work closely with shelters, rehab centers, mental health
@@ -42,7 +42,7 @@ const Section4 = () => {
               with practicality and cultural sensitivity.
             </p>
           </div>
-          <div className="md:my-3">
+          <div className="my-9 md:my-2">
             <h3 className="font-bold text-2xl my-2">
               Addressing Social Determinants of Health
             </h3>
@@ -55,6 +55,8 @@ const Section4 = () => {
           </div>
         </div>
 
+
+        {/* absolute images */}
         <div className="absolute start-0 top-0">
           <img
             src="/assets/dark-blue-left.png"

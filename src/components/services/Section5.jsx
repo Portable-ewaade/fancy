@@ -3,7 +3,7 @@ import React from 'react'
 const Section5 = () => {
   return (
     <section
-      className="grid_container relative pb-16"
+      className="grid_container relative md:pb-16"
       style={{
         backgroundImage: 'url("/assets/service-bg4.png")',
         backgroundRepeat: "none",

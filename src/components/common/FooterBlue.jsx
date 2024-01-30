@@ -17,7 +17,7 @@ const Footer = () => {
             <p className=" md:font-light lg:font-semibold text-sm ">
               Transforming behaviourial <br /> health.
             </p>
-            <Link href="malto:marvellous@motivhealth.org" className="text-sm">
+            <Link href="mailto:marvellous@motivhealth.org" className="text-sm">
               marvellous@motivhealth.org
             </Link>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="absolute end-0 md:inset-y-1/4 inset-y-1/2  animate__animated animate__bounce animate__infinite infinite">
+        <div className="hidden md:block absolute end-0 md:inset-y-1/4 inset-y-1/2  animate__animated animate__bounce animate__infinite infinite">
           <img
             src="/assets/big-logo-white.png"
             alt=""

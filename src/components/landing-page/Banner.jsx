@@ -19,8 +19,6 @@ const Banner = () => {
             <img
               src="/assets/mobile-big-logo.png"
               alt="logo"
-              // className="w-[450px]"
-              // width={550}
             />
           </div>
         </div>

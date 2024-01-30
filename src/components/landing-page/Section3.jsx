@@ -8,7 +8,7 @@ const Section3 = () => {
           <h1 className="font-extrabold text-color text-center md:text-3xl text-2xl my-16">
             Tailored Comprehensive Solutions
           </h1>
-          <div className="md:flex my-12 ">
+          <div className="md:flex md:my-12 mt-12 mb-8">
             <div className="flex-1 ">
               <h3 className="font-bold md:text-xl my-3">
                 Healthcare Technology Consulting <br /> and Assistance
