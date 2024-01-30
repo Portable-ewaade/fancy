@@ -14,7 +14,7 @@ const Footer = () => {
                 className="h-16 mt-6"
               />
             </Link>
-            <p className="font-semibold md:font-light text-sm text-color">
+            <p className="font-light md:font-semibold text-sm text-color">
               Transforming behaviourial <br /> health.
             </p>
             <Link
