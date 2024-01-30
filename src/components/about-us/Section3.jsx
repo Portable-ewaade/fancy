@@ -2,7 +2,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <section className="grid_container bg-white relative pb-16 text-lg ">
+    <section className="grid_container bg-white relative md:pb-16 pb-7 text-lg ">
       <main className="wrapper box-sec">
         <div className="md:flex my-12 ">
           <div className="flex-1">
