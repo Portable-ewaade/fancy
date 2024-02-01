@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Section5 = () => {
@@ -27,11 +28,11 @@ const Section5 = () => {
         </div>
 
         <div className="text-center md:w-2/6 py-3 my-12 mx-auto bg-white rounded-lg ">
-          <a
+          <Link
             href="/contact-us"
             className="text-lg font-semibold text-color hover:text-[#0A0A8C]">
             Send us a message
-          </a>
+          </Link>
         </div>
       </main>
     </section>

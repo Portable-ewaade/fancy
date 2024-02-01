@@ -26,13 +26,13 @@ export default function Example() {
           <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-18 items-center justify-between">
               <div className="flex flex-1  items-center">
-                <a href="/">
+                <Link href="/">
                   <img
                     className="h-16 w-auto my-1"
                     src="/assets/nav-logo.png"
                     alt="motive health logo"
                   />
-                </a>
+                </Link>
               </div>
 
               <div className="flex items-center sm:hidden">

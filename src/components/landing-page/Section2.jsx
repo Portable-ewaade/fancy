@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import Link from "next/link";
+
 
 const Section2 = () => {
   return (
@@ -39,6 +41,7 @@ const Section2 = () => {
             className="mx-auto pt-10 md:hidden"
             height={500}
           />
+
           <Link
             href="/about"
             className="text-color font-extrabold text-xs underline underline-offset-4 hover:text-[#0A0A8C]">
