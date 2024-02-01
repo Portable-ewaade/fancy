@@ -15,7 +15,7 @@ const Footer = () => {
               />
             </Link>
             <p className=" md:font-light lg:font-semibold text-sm ">
-              Transforming behaviourial <br /> health.
+              Transforming behavioral <br /> health.
             </p>
             <Link href="mailto:marvellous@motivhealth.org" className="text-sm">
               marvellous@motivhealth.org
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
             <ul>
               <Link href="#" className="font-light">
-                Linkedin
+                Linkedln
               </Link>
             </ul>
           </div>

@@ -13,7 +13,7 @@ const Section5 = () => {
             with us? Feel free to <br className="hidden md:block" /> reach out
             to our team. Whether it's inquiries, partnership proposals, or
             seeking further <br className="hidden md:block" /> information, we
-            are here to assist you. Click the button below.
+            are here to assist you.
           </p>
         </div>
 
