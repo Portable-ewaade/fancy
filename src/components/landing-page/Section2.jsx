@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+
 
 const Section2 = () => {
   return (
@@ -39,11 +41,11 @@ const Section2 = () => {
             height={500}
           />
 
-          <a
+          <Link
             href="/about"
             className="text-color font-extrabold text-xs underline underline-offset-4 hover:text-[#0A0A8C]">
             See more about us
-          </a>
+          </Link>
         </div>
       </main>
     </section>
