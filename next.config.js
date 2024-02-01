@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const nextConfig = {
   distDir: 'dist',
   exportTrailingSlash: true,
+  trailingSlash: true,
   output: 'export',
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -15,11 +16,6 @@ const nextConfig = {
     );
     return config;
   },
-};
-module.exports = {
-  exportTrailingSlash: true,
-}
-module.exports = {
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
@@ -32,6 +28,7 @@ module.exports = {
       '/contact-us': { page: '/contact-us' },
     }
   },
-}
+};
+
 
 module.exports = nextConfig;
