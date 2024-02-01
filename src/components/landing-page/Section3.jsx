@@ -49,7 +49,7 @@ const Section3 = () => {
             </div>
           </div>
 
-          <div className="flex-1 mt-5 mb-10">
+          <div className="flex-1 mt-5 md:mb-10">
             <a
               href="/services"
               className=" text-color font-extrabold text-sm underline underline-offset-4 hover:text-[#0A0A8C]"

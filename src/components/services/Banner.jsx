@@ -20,7 +20,7 @@ const Banner = () => {
           </p>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 mb-6 md:mb-0">
           <img
             src="/assets/home-img3.png"
             alt="logo"
