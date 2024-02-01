@@ -68,6 +68,13 @@ const Banner = () => {
           </div>
           <div className="item">
             <img
+              src="/assets/contract-img-4.png"
+              alt="about carousel image"
+              className=" w-full md:h-[82vh] h-[70vh]"
+            />
+          </div>
+          <div className="item">
+            <img
               src="/assets/contract-img-2.png"
               alt="about carousel image"
               className=" w-full md:h-[82vh] h-[70vh]"
@@ -76,13 +83,6 @@ const Banner = () => {
           <div className="item">
             <img
               src="/assets/contract-img-3.png"
-              alt="about carousel image"
-              className=" w-full md:h-[82vh] h-[70vh]"
-            />
-          </div>
-          <div className="item">
-            <img
-              src="/assets/contract-img-4.png"
               alt="about carousel image"
               className=" w-full md:h-[82vh] h-[70vh]"
             />
