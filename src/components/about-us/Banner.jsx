@@ -45,7 +45,7 @@ const Banner = () => {
     <>
       <section className="grid_container relative ">
         <div className="wrapper z-0">
-          <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
+          <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14 animate__animated animate__fadeIn animate__delay-0s">
             <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
               Empowering innovation in <br className="hidden md:block" /> mental
               health.
@@ -61,8 +61,9 @@ const Banner = () => {
             loop={true}
             animateOut={"fadeOut"}
             autoplay={true}
-            autoplaySpeed={1000}
-            className="md:h-[82vh] h-[70vh] mt-16 z-0">
+            autoplaySpeed={500}
+            className="md:h-[82vh] h-[70vh] mt-16 z-0"
+          >
             <div className="item">
               <img
                 src="/assets/about-img-1.png"

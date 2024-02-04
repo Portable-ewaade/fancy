@@ -1,26 +1,38 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Banner = () => {
   return (
     <section className="grid_container lg:pb-16">
       <main className="wrapper md:mt-10 ">
-        <div className="md:text-center pt-20 ms-4 md:ms-0">
-          <h1 className="md:text-6xl text-4xl font-extrabold text-color-banner pt-16 md:leading-tight leading-tight">
-            <span className="text-color2">
-              Our <br className="block md:hidden" />{" "}
-            </span>{" "}
-            comprehensive <span className="text-color2">services</span> in{" "}
-            <br /> <span className="text-color2">mental health </span>
-            innovation.
-          </h1>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__fadeIn animate__delay-0s"
+                  : ""
+              }
+            >
+              <div className="md:text-center pt-20 ms-4 md:ms-0">
+                <h1 className="md:text-6xl text-4xl font-extrabold text-color-banner pt-16 md:leading-tight leading-tight">
+                  <span className="text-color2">
+                    Our <br className="block md:hidden" />{" "}
+                  </span>{" "}
+                  comprehensive <span className="text-color2">services</span> in{" "}
+                  <br /> <span className="text-color2">mental health </span>
+                  innovation.
+                </h1>
 
-          <p className="text-xl mt-5 tracking-wide font-normal">
-            Empowering solutions at the intersection of behavioral health and
-            technology.
-          </p>
-        </div>
-
-        <div className="mt-5 mb-6 md:mb-0">
+                <p className="text-xl mt-5 tracking-wide font-normal">
+                  Empowering solutions at the intersection of behavioral health
+                  and technology.
+                </p>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
+        <div className="push mt-5 mb-6 md:mb-0">
           <img
             src="/assets/home-img3.png"
             alt="logo"

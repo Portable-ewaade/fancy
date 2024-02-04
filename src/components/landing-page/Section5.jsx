@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section5 = () => {
   return (
@@ -17,20 +18,32 @@ const Section5 = () => {
             are here to assist you.
           </p>
         </div>
-
-        <div>
-          <img
-            src="/assets/home-img3.png"
-            alt="home image"
-            className="mx-auto pt-10 "
-            width={550}
-          />
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__rotateIn animate__infinite animate__slow animate__delay-0s"
+                  : ""
+              }
+            >
+              <div>
+                <img
+                  src="/assets/home-img3.png"
+                  alt="home image"
+                  className="mx-auto pt-10 "
+                  width={550}
+                />
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
 
         <div className="text-center md:w-2/6 py-3 my-12 mx-auto bg-white rounded-lg ">
           <Link
             href="/contact-us"
-            className="text-lg font-semibold text-color hover:text-[#0A0A8C]">
+            className="text-lg font-semibold text-color hover:text-[#0A0A8C]"
+          >
             Send us a message
           </Link>
         </div>

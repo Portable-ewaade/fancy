@@ -22,14 +22,14 @@ const Section4 = () => {
           </p>
         </div>
 
-        <div className="hidden md:block">
+        <div className="push hidden md:block">
           <img
             src="/assets/home-img2.png"
             alt="home image"
             className="mx-auto pt-10 pb-10"
           />
         </div>
-        <div className="md:hidden">
+        <div className="push md:hidden">
           <img
             src="/assets/mobile-home-img-2.png"
             alt="home image"
