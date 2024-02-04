@@ -1,4 +1,5 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section5 = () => {
   return (
@@ -18,14 +19,27 @@ const Section5 = () => {
               vulnerable and underserved populations.
             </p>
           </div>
-
-          <div className="md:flex mt-14 md:absolute end-0">
-            <img
-              src="/assets/big-logo-white.png"
-              alt="home image"
-              className="w-[450px]"
-              // width={450}
-            />
+          <div>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__slideInUp animate__delay-0s animate__slow"
+                      : ""
+                  }
+                >
+                  <div className=" md:flex mt-14 md:absolute end-0">
+                    <img
+                      src="/assets/big-logo-white.png"
+                      alt="home image"
+                      className="w-[450px]"
+                      // width={450}
+                    />
+                  </div>
+                </div>
+              )}
+            </TrackVisibility>
           </div>
         </div>
 
@@ -40,38 +54,51 @@ const Section5 = () => {
           </div>
 
           <div className="pb-10 ">
-            <div className="md:flex">
-              <div className="flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
-                <h1 className="text-color text-2xl font-bold mt-1">
-                  Innovation
-                </h1>
-                <p className="mt-1">
-                  We're committed to fostering a culture of constant innovation.
-                  We explore groundbreaking methods, push technology and
-                  research boundaries, aiming for transformative change.
-                </p>
-              </div>
-              <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
-                <h1 className="text-color text-2xl font-bold mt-2">
-                  Collaboration
-                </h1>
-                <p className="mt-2">
-                  We believe in working closely with diverse partners,
-                  healthcare providers, researchers, policymakers, and community
-                  groups, to create powerful solutions together
-                </p>
-              </div>
-              <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
-                <h1 className="text-color text-2xl font-bold mt-2">
-                  Compassion
-                </h1>
-                <p className="mt-2">
-                  At the core of our approach is compassion. We prioritize
-                  empathy, infusing our initiatives with a deeply human-centric
-                  focus to ensure effectiveness.
-                </p>
-              </div>
-            </div>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__lightSpeedInLeft animate__delay-0.5s animate__slow"
+                      : ""
+                  }
+                >
+                  <div className="md:flex">
+                    <div className="flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
+                      <h1 className="text-color text-2xl font-bold mt-1">
+                        Innovation
+                      </h1>
+                      <p className="mt-1">
+                        We're committed to fostering a culture of constant
+                        innovation. We explore groundbreaking methods, push
+                        technology and research boundaries, aiming for
+                        transformative change.
+                      </p>
+                    </div>
+                    <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
+                      <h1 className="text-color text-2xl font-bold mt-2">
+                        Collaboration
+                      </h1>
+                      <p className="mt-2">
+                        We believe in working closely with diverse partners,
+                        healthcare providers, researchers, policymakers, and
+                        community groups, to create powerful solutions together
+                      </p>
+                    </div>
+                    <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
+                      <h1 className="text-color text-2xl font-bold mt-2">
+                        Compassion
+                      </h1>
+                      <p className="mt-2">
+                        At the core of our approach is compassion. We prioritize
+                        empathy, infusing our initiatives with a deeply
+                        human-centric focus to ensure effectiveness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </TrackVisibility>
           </div>
         </div>
       </main>

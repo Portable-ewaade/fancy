@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Section4 = () => {
   return (
@@ -28,7 +28,7 @@ const Section4 = () => {
             get accurate results.
           </p>
         </div>
-       
+
         <div className="absolute end-0 top-0 z-0">
           <img
             src="/assets/half-circle-right-white.png"
@@ -57,6 +57,6 @@ const Section4 = () => {
       </main>
     </section>
   );
-}
+};
 
-export default Section4
+export default Section4;

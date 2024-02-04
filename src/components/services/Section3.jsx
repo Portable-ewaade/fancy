@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section3 = () => {
   return (
@@ -16,38 +17,50 @@ const Section3 = () => {
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           Research Project Management
         </h1>
-
-        <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">Project Management</h3>
-          <p className="font-medium text-lg">
-            We create tailored service agreements for projects, short or
-            long-term. Working closely with clients, we strategize, research,
-            design interventions, and achieve measurable outcomes aligned with
-            their goals.
-          </p>
-        </div>
-        <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">
-            Research Oversight and Coordination
-          </h3>
-          <p className="font-medium text-lg">
-            Our project managers guide every stage of research projects using
-            behavioral health-aligned methods to achieve impactful outcomes.
-          </p>
-        </div>
-        <div className="md:w-3/5 mb-12">
-          <h3 className="font-bold text-xl my-2">
-            Guiding and Organizing Research Projects
-          </h3>
-          <p className="font-medium text-lg">
-            We handle the organization and supervision of research projects,
-            making sure each step is well-planned and completed on time to
-            achieve meaningful results.
-          </p>
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__slideInRight animate__delay-0s animate__fast"
+                  : ""
+              }
+            >
+              <div className="md:w-3/5 mb-12">
+                <h3 className="font-bold text-xl my-2">Project Management</h3>
+                <p className="font-medium text-lg">
+                  We create tailored service agreements for projects, short or
+                  long-term. Working closely with clients, we strategize,
+                  research, design interventions, and achieve measurable
+                  outcomes aligned with their goals.
+                </p>
+              </div>
+              <div className="md:w-3/5 mb-12">
+                <h3 className="font-bold text-xl my-2">
+                  Research Oversight and Coordination
+                </h3>
+                <p className="font-medium text-lg">
+                  Our project managers guide every stage of research projects
+                  using behavioral health-aligned methods to achieve impactful
+                  outcomes.
+                </p>
+              </div>
+              <div className="md:w-3/5 mb-12">
+                <h3 className="font-bold text-xl my-2">
+                  Guiding and Organizing Research Projects
+                </h3>
+                <p className="font-medium text-lg">
+                  We handle the organization and supervision of research
+                  projects, making sure each step is well-planned and completed
+                  on time to achieve meaningful results.
+                </p>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
       </main>
     </section>
   );
-}
+};
 
-export default Section3
+export default Section3;

@@ -1,4 +1,5 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
   return (
@@ -7,38 +8,53 @@ const Section2 = () => {
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           Human and Health Services Technology <br /> Consulting
         </h1>
-
-        <div className="md:w-3/5 mb-12 font-medium">
-          <h3 className="font-bold text-xl my-2">
-            Healthcare Tech Advisory and Assistance
-          </h3>
-          <p className="font-medium text-lg">
-            MHRI offers strategic guidance, expert advice, and hands-on
-            implementation of technology solutions, prioritizing people-centric
-            approaches, improved healthcare delivery, enhanced user experiences,
-            and operational efficiency.
-          </p>
-        </div>
-        <div className="md:w-3/5 mb-12 font-medium">
-          <h3 className="font-bold text-xl my-2">Consulting Solution</h3>
-          <p className="font-medium text-lg">
-            Our service offers expert guidance to individuals and organizations
-            seeking innovative mental health solutions. We use data-driven
-            insights and behavioral health expertise to provide strategic advice
-            for impactful outcomes.
-          </p>
-        </div>
-        <div className="md:w-3/5 mb-12 font-medium">
-          <h3 className="font-bold text-xl my-2">
-            Expert Advice for Better Mental Health Solution
-          </h3>
-          <p className="font-medium text-lg">
-            We provide advice and strategic guidance to people and organizations
-            looking for new and innovative solutions in mental health using
-            information and expertise in behavioral health.
-          </p>
-        </div>
-
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__zoomIn animate__delay-0s animate__fast"
+                  : ""
+              }
+            >
+              <div>
+                <div className="md:w-3/5 mb-12 font-medium">
+                  <h3 className="font-bold text-xl my-2">
+                    Healthcare Tech Advisory and Assistance
+                  </h3>
+                  <p className="font-medium text-lg">
+                    MHRI offers strategic guidance, expert advice, and hands-on
+                    implementation of technology solutions, prioritizing
+                    people-centric approaches, improved healthcare delivery,
+                    enhanced user experiences, and operational efficiency.
+                  </p>
+                </div>
+                <div className="md:w-3/5 mb-12 font-medium">
+                  <h3 className="font-bold text-xl my-2">
+                    Consulting Solution
+                  </h3>
+                  <p className="font-medium text-lg">
+                    Our service offers expert guidance to individuals and
+                    organizations seeking innovative mental health solutions. We
+                    use data-driven insights and behavioral health expertise to
+                    provide strategic advice for impactful outcomes.
+                  </p>
+                </div>
+                <div className="md:w-3/5 mb-12 font-medium">
+                  <h3 className="font-bold text-xl my-2">
+                    Expert Advice for Better Mental Health Solution
+                  </h3>
+                  <p className="font-medium text-lg">
+                    We provide advice and strategic guidance to people and
+                    organizations looking for new and innovative solutions in
+                    mental health using information and expertise in behavioral
+                    health.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
         <div className="absolute start-0 top-0 z-0">
           <img
             src="/assets/half-circle-left.png"

@@ -31,7 +31,7 @@ const Section2 = () => {
           </p>
         </div>
 
-        <div className="hidden md:block">
+        <div className="push hidden md:block">
           <img
             src="/assets/about-img1.png"
             alt="home image"
@@ -39,7 +39,7 @@ const Section2 = () => {
             // height={500}
           />
         </div>
-        <div className="md:hidden">
+        <div className="push md:hidden">
           <img
             src="/assets/about-img1-mobile.png"
             alt="home image"
