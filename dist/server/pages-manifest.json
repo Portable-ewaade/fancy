@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/contract": "pages/contract.js",
+  "/services": "pages/services.js",
   "/contact-us": "pages/contact-us.js",
-  "/services": "pages/services.js"
+  "/about": "pages/about.js"
 }

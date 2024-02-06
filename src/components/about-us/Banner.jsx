@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import dynamic for client-side rendering
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -15,7 +17,14 @@ const Banner = () => {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
   });
-  useEffect(() => {}, []);
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 900,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
 
   const Responsive = {
     nav: false,
@@ -45,7 +54,10 @@ const Banner = () => {
     <>
       <section className="grid_container relative ">
         <div className="wrapper z-0">
-          <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14 animate__animated animate__fadeIn animate__delay-0s">
+          <div
+            className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14 animate__animated animate__fadeIn animate__delay-0s"
+            data-aos="fade-up-right"
+          >
             <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
               Empowering innovation in <br className="hidden md:block" /> mental
               health.
@@ -55,7 +67,6 @@ const Banner = () => {
               <br className="hidden md:block" /> Behavioral Health.
             </p>
           </div>
-
           <OwlCarousel
             responsive={Responsive}
             loop={true}

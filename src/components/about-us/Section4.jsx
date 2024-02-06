@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TrackVisibility from "react-on-screen";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Section4 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="grid_container pb-12 relative text-lg ">
       <main className="wrapper box-sec">
         <div className="">
-          <h1 className="font-extrabold text-color text-center text-4xl my-10">
+          <h1
+            className="font-extrabold text-color text-center text-4xl my-10"
+            data-aos="fade-up"
+          >
             Our Objectives
           </h1>
         </div>
@@ -21,10 +33,13 @@ const Section4 = () => {
             >
               <div className="md:grid grid-rows-4 grid-flow-col gap-4">
                 <div className="my-9 md:my-2">
-                  <h3 className="font-bold text-2xl my-2">
+                  <h3 className="font-bold text-2xl my-2" data-aos="fade-up">
                     Conducting Cutting-edge Research
                   </h3>
-                  <p className="md:w-5/6 md:text-lg lg:text-lg">
+                  <p
+                    className="md:w-5/6 md:text-lg lg:text-lg"
+                    data-aos="fade-down"
+                  >
                     MHRI is deeply committed to pioneering research in
                     Artificial Intelligence/Machine Learning and behavioral
                     health. We use innovative methods and technology to uncover
@@ -33,10 +48,10 @@ const Section4 = () => {
                   </p>
                 </div>
                 <div className="my-9 md:my-2">
-                  <h3 className="font-bold text-2xl my-2">
+                  <h3 className="font-bold text-2xl my-2" data-aos="fade-up">
                     Developing Innovative Interventions
                   </h3>
-                  <p className="md:w-5/6 md:text-lg lg:text-lg">
+                  <p className="md:w-5/6 md:text-lg lg:text-lg" data-aos="fade-down">
                     We specialize in developing groundbreaking interventions.
                     Using predictive analytics, we offer personalized support
                     tailored to individual needs. Our aim is to provide
@@ -45,10 +60,10 @@ const Section4 = () => {
                   </p>
                 </div>
                 <div className="my-9 md:my-2">
-                  <h3 className="font-bold text-2xl my-2">
+                  <h3 className="font-bold text-2xl my-2" data-aos="fade-up">
                     Community Partnerships
                   </h3>
-                  <p className="md:w-5/6 md:text-lg">
+                  <p className="md:w-5/6 md:text-lg" data-aos="fade-down">
                     We work closely with shelters, rehab centers, mental health
                     services, and policymakers. These collaborations strengthen
                     our research and interventions, making sure they meet
@@ -56,10 +71,10 @@ const Section4 = () => {
                   </p>
                 </div>
                 <div className="my-9 md:my-2">
-                  <h3 className="font-bold text-2xl my-2">
+                  <h3 className="font-bold text-2xl my-2" data-aos="fade-up">
                     Addressing Social Determinants of Health
                   </h3>
-                  <p className="md:w-5/6 md:text-lg lg:text-lg">
+                  <p className="md:w-5/6 md:text-lg lg:text-lg" data-aos="fade-down">
                     At MHRI, we focus on identifying and lessening social
                     factors impacting well-being. Our aim is to reduce health
                     disparities and promote fairer healthcare outcomes by

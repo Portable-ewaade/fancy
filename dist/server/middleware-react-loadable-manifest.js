@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"..\\\\components\\\\contracts\\\\Banner.jsx -> react-owl-carousel\":{\"id\":\"..\\\\components\\\\contracts\\\\Banner.jsx -> react-owl-carousel\",\"files\":[\"static/chunks/node_modules_react-owl-carousel_umd_OwlCarousel_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{\"..\\\\components\\\\about-us\\\\Banner.jsx -> react-owl-carousel\":{\"id\":\"..\\\\components\\\\about-us\\\\Banner.jsx -> react-owl-carousel\",\"files\":[\"static/chunks/node_modules_react-owl-carousel_umd_OwlCarousel_js.js\"]}}"

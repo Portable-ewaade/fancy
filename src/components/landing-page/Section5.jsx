@@ -1,12 +1,22 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import TrackVisibility from "react-on-screen";
 
 const Section5 = () => {
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        duration: 800,
+        // easing: "ease-in-sine",
+        delay: 100,
+      });
+    }, []);
   return (
     <section className="grid_container bg-color2 relative md:text-center text-white text-lg py-10">
       <main className="wrapper box-sec">
-        <div className="">
+        <div className="" data-aos="fade-up">
           <h1 className="font-extrabold md:text-3xl text-xl mt-12 mb-7 text-center">
             Reach Out for Collaborative Opportunities
           </h1>

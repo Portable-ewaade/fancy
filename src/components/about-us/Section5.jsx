@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TrackVisibility from "react-on-screen";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section5 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="grid_container bg-color2 relative  text-white text-lg">
       <main className="wrapper box-sec">
         <div className="md:flex">
           <div className="md:flex-1 md:mt-20 md:pt-10">
-            <h1 className="font-extrabold text-3xl mt-20 mb-5 text-center md:text-start">
+            <h1
+              className="font-extrabold text-3xl mt-20 mb-5 text-center md:text-start"
+              data-aos="fade-up-right"
+            >
+              {" "}
               Our Impact and Commitment
             </h1>
-            <p className="font-normal mt-5 tracking-wide md:w-3/5 ">
+            <p
+              className="font-normal mt-5 tracking-wide md:w-3/5 "
+              data-aos="fade-up-right"
+            >
               Aligned with our mission, vision, and objectives, MotivHealth
               Research Initiative is committed to making a meaningful impact on
               the lives of individuals facing mental health challenges. We
@@ -45,60 +62,65 @@ const Section5 = () => {
 
         <div>
           <div className=" md:pt-10 pb-14">
-            <h1 className="font-extrabold text-3xl mt-20 mb-5">
+            <h1
+              className="font-extrabold text-3xl mt-20 mb-5"
+              data-aos="fade-up-right"
+            >
               Our Core Values
             </h1>
-            <p className="font-normal mt-5 tracking-wide md:w-3/5 ">
+            <p
+              className="font-normal mt-5 tracking-wide md:w-3/5 "
+              data-aos="fade-up-right"
+            >
               Our identity is forged upon three core values.
             </p>
           </div>
 
           <div className="pb-10 ">
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible
-                      ? "animate__animated animate__lightSpeedInLeft animate__delay-0.5s animate__slower"
-                      : ""
-                  }
+            <div className="md:flex">
+              <div
+                className="push flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg"
+                data-aos="fade-up"
+              >
+                <h1 className="text-color text-2xl font-bold mt-1">
+                  Innovation
+                </h1>
+                <p className="mt-1">
+                  We're committed to fostering a culture of constant innovation.
+                  We explore groundbreaking methods, push technology and
+                  research boundaries, aiming for transformative change.
+                </p>
+              </div>
+              <div
+                className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg"
+                data-aos="fade-down"
+              >
+                <h1 className="text-color text-2xl font-bold mt-2">
+                  Collaboration
+                </h1>
+                <p className="mt-2">
+                  We believe in working closely with diverse partners,
+                  healthcare providers, researchers, policymakers, and community
+                  groups, to create powerful solutions together
+                </p>
+              </div>
+              <div
+                className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8"
+                data-aos="fade-up"
+              >
+                <h1
+                  className="text-color text-2xl font-bold mt-2"
+                  data-aos="fade-up"
                 >
-                  <div className="md:flex">
-                    <div className="push flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
-                      <h1 className="text-color text-2xl font-bold mt-1">
-                        Innovation
-                      </h1>
-                      <p className="mt-1">
-                        We're committed to fostering a culture of constant
-                        innovation. We explore groundbreaking methods, push
-                        technology and research boundaries, aiming for
-                        transformative change.
-                      </p>
-                    </div>
-                    <div className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
-                      <h1 className="text-color text-2xl font-bold mt-2">
-                        Collaboration
-                      </h1>
-                      <p className="mt-2">
-                        We believe in working closely with diverse partners,
-                        healthcare providers, researchers, policymakers, and
-                        community groups, to create powerful solutions together
-                      </p>
-                    </div>
-                    <div className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
-                      <h1 className="text-color text-2xl font-bold mt-2">
-                        Compassion
-                      </h1>
-                      <p className="mt-2">
-                        At the core of our approach is compassion. We prioritize
-                        empathy, infusing our initiatives with a deeply
-                        human-centric focus to ensure effectiveness.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </TrackVisibility>
+                  Compassion
+                </h1>
+                <p className="mt-2">
+                  At the core of our approach is compassion. We prioritize
+                  empathy, infusing our initiatives with a deeply human-centric
+                  focus to ensure effectiveness.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
