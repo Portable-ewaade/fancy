@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section4 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1500,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="grid_container bg-[#CCF0FF] relative md:pb-16 ">
       <main className="wrapper box-sec">
@@ -8,7 +18,7 @@ const Section4 = () => {
           Clinical Research Consulting
         </h1>
 
-        <div className="md:w-3/5 mb-12">
+        <div className="md:w-3/5 mb-12" data-aos="fade-down">
           <h3 className="font-bold text-xl my-2">
             Clinical Study Guidance Services
           </h3>
@@ -18,7 +28,7 @@ const Section4 = () => {
             maximizing research effectiveness.
           </p>
         </div>
-        <div className="md:w-3/5 mb-12">
+        <div className="md:w-3/5 mb-12" data-aos="fade-down">
           <h3 className="font-bold text-xl my-2">
             Expert Assistance for Healthcare Studies
           </h3>

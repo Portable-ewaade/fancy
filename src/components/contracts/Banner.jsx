@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import dynamic for client-side rendering
-
+import TrackVisibility from "react-on-screen";
+import AOS from "aos";
+import "aos/dist/aos.css";
 var $ = require("jquery");
 if (typeof window !== "undefined") {
   // Client-side-only code
@@ -15,7 +17,14 @@ const Banner = () => {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
   });
-  useEffect(() => {}, []);
+  useEffect(() => {
+       AOS.init({
+         offset: 200,
+         duration: 800,
+         easing: "ease-in-sine",
+         delay: 100,
+       });
+  }, []);
 
   const Responsive = {
     nav: false,
@@ -41,7 +50,7 @@ const Banner = () => {
     },
   };
   return (
-    <section className="grid_container relative ">
+    <section className="grid_container relative " data-aos="fade-up-right">
       <div className="wrapper z-0">
         <div className=" text-[#03032F] absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
           <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
@@ -58,7 +67,8 @@ const Banner = () => {
           animateOut={"fadeOut"}
           autoplay={true}
           autoplaySpeed={1000}
-          className="md:h-[82vh] h-[70vh] mt-16 z-0">
+          className="md:h-[82vh] h-[70vh] mt-16 z-0"
+        >
           <div className="item">
             <img
               src="/assets/contract-img-1.png"

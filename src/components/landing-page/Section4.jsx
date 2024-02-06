@@ -1,20 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import TrackVisibility from "react-on-screen";
 
 const Section4 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      // easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="grid_container bg-color relative pb-16 text-lg py-10">
       <main className="wrapper box-sec">
-        <div className="">
+        <div className="" data-aos="fade-down">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             Our Approach to Behavioral Health
           </h1>
-          <p className="font-normal text-[1.1rem] mt-8 tracking-wide">
+          <p
+            className="font-normal text-[1.1rem] mt-8 tracking-wide"
+            data-aos="fade-down"
+          >
             At MHRI, our approach blends predictive analytics, robust research
             methodologies, and collaborative partnerships. We use data-driven
             insights to create impactful interventions tackling behavioral
             health challenges.
           </p>
-          <p className="font-normal mt-8 text-[normal] tracking-wide">
+          <p
+            className="font-normal mt-8 text-[normal] tracking-wide"
+            data-aos="fade-down"
+          >
             Integrating technology and research, we develop personalized
             interventions that adapt to individual needs. Collaboration with
             diverse stakeholders ensures cultural sensitivity and practicality
@@ -22,7 +39,7 @@ const Section4 = () => {
           </p>
         </div>
 
-        <div className="push hidden md:block">
+        <div className="push hidden md:block" data-aos="fade-down">
           <img
             src="/assets/home-img2.png"
             alt="home image"
