@@ -15,7 +15,7 @@ const Section4 = () => {
             <div
               className={
                 isVisible
-                  ? "animate__animated animate__slideInUp animate__delay-1s animate__slow"
+                  ? "animate__animated animate__fadeIn animate__delay-0s animate__slower"
                   : ""
               }
             >

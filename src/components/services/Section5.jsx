@@ -23,7 +23,7 @@ const Section5 = () => {
             <div
               className={
                 isVisible
-                  ? "animate__animated animate__fadeIn animate__delay-0s animate__fast"
+                  ? "animate__animated animate__fadeIn animate__delay-0s animate__slower"
                   : ""
               }
             >

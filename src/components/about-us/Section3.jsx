@@ -5,16 +5,16 @@ const Section3 = () => {
   return (
     <section className="grid_container bg-white relative md:pb-16 pb-7 text-lg ">
       <main className="wrapper box-sec">
-        <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={
-                isVisible
-                  ? "animate__animated animate__bounceIn animate__delay-0s animate__slow"
-                  : ""
-              }
-            >
-              <div className=" md:flex my-12 ">
+        <div className=" md:flex my-12 ">
+          <TrackVisibility>
+            {({ isVisible }) => (
+              <div
+                className={
+                  isVisible
+                    ? "animate__animated animate__fadeInLeft animate__delay-0s animate__slower"
+                    : ""
+                }
+              >
                 <div className="flex-1">
                   <h3 className="text-color2 font-extrabold md:text-2xl text-3xl mt-2 mb-1 text-center md:text-start">
                     Our Mission
@@ -29,7 +29,20 @@ const Section3 = () => {
                     policy development paradigms.
                   </p>
                 </div>
-                <div className="flex-1 md:ms-14 mt-16 md:my-0">
+              </div>
+            )}
+          </TrackVisibility>
+
+          <TrackVisibility>
+            {({ isVisible }) => (
+              <div
+                className={
+                  isVisible
+                    ? "animate__animated animate__fadeInRight animate__delay-0s animate__slower"
+                    : ""
+                }
+              >
+                <div className="flex-1 md:ms-2 mt-16 md:my-0">
                   <h3 className=" text-color2 font-extrabold md:text-2xl text-3xl mt-2 mb-1 text-center md:text-start ">
                     Our Vision
                   </h3>
@@ -43,9 +56,9 @@ const Section3 = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          )}
-        </TrackVisibility>
+            )}
+          </TrackVisibility>
+        </div>
       </main>
     </section>
   );

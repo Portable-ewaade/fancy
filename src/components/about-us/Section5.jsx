@@ -25,7 +25,7 @@ const Section5 = () => {
                 <div
                   className={
                     isVisible
-                      ? "animate__animated animate__slideInUp animate__delay-0s animate__slow"
+                      ? "animate__animated animate__slideInU animate__delay-0s animate__slower"
                       : ""
                   }
                 >
@@ -59,12 +59,12 @@ const Section5 = () => {
                 <div
                   className={
                     isVisible
-                      ? "animate__animated animate__lightSpeedInLeft animate__delay-0.5s animate__slow"
+                      ? "animate__animated animate__lightSpeedInLeft animate__delay-0.5s animate__slower"
                       : ""
                   }
                 >
                   <div className="md:flex">
-                    <div className="flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
+                    <div className="push flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg">
                       <h1 className="text-color text-2xl font-bold mt-1">
                         Innovation
                       </h1>
@@ -75,7 +75,7 @@ const Section5 = () => {
                         transformative change.
                       </p>
                     </div>
-                    <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
+                    <div className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg">
                       <h1 className="text-color text-2xl font-bold mt-2">
                         Collaboration
                       </h1>
@@ -85,7 +85,7 @@ const Section5 = () => {
                         community groups, to create powerful solutions together
                       </p>
                     </div>
-                    <div className="flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
+                    <div className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8">
                       <h1 className="text-color text-2xl font-bold mt-2">
                         Compassion
                       </h1>

@@ -1,21 +1,34 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 //import { ContactForm } from '.';
 
 const Banner = () => {
   return (
     <section className="grid_container relative lg:h-[83vh] h-[65vh] md:bg-[#03032F] bg-[#07075D] mb-20">
       <main className="wrapper">
-        <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-4 md:mt-12 mt-5">
-          <h1 className="md:text-4xl text-3xl font-extrabold md:leading-tight leading-tight tracking-wide">
-            Learn how we are revolutionizing <br /> behavioral health.
-          </h1>
-          <p className="md:text-xl font-bold tracking-wide mt-5 ">
-            Need more information or interested in collaborating with{" "}
-            <br className="hidden md:block" /> us? Feel free to reach out.
-          </p>
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__fadeIn animate__delay-0s animate__slower"
+                  : ""
+              }
+            >
+              <div className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-4 md:mt-12 mt-5">
+                <h1 className="md:text-4xl text-3xl font-extrabold md:leading-tight leading-tight tracking-wide">
+                  Learn how we are revolutionizing <br /> behavioral health.
+                </h1>
+                <p className="md:text-xl font-bold tracking-wide mt-5 ">
+                  Need more information or interested in collaborating with{" "}
+                  <br className="hidden md:block" /> us? Feel free to reach out.
+                </p>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
 
-        <div className="lg:block hidden absolute end-0 top-20 mt-10">
+        <div className="bounce lg:block hidden absolute end-0 top-20 mt-10">
           <img
             src="/assets/contact-big-logo.png"
             alt="logo"

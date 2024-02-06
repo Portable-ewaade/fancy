@@ -1,23 +1,38 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
   return (
     <section className="grid_container bg-white relative pb-16 z-0">
       <main className="wrapper box-sec">
-        <div className="mb-10 z-10">
-          <h1 className="font-extrabold text-color text-center text-3xl mt-12 mb-4">
-            Versatile <span className="text-color2">Partnership</span> Options
-          </h1>
-          <p className="md:text-center md:w-2/3 text-lg mx-auto">
-            We offer flexible contract vehicles designed to meet the diverse
-            needs of our clients, enabling seamless collaboration and access to
-            our expertise in mental health consulting, research, and innovative
-            interventions.
-          </p>
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__fadeIn animate__delay-0s animate__slower"
+                  : ""
+              }
+            >
+              <div className="mb-10 z-10">
+                <h1 className="font-extrabold text-color text-center text-3xl mt-12 mb-4">
+                  Versatile <span className="text-color2">Partnership</span>{" "}
+                  Options
+                </h1>
+                <p className="md:text-center md:w-2/3 text-lg mx-auto">
+                  We offer flexible contract vehicles designed to meet the
+                  diverse needs of our clients, enabling seamless collaboration
+                  and access to our expertise in mental health consulting,
+                  research, and innovative interventions.
+                </p>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
         {/*  section 1 mobile and laptop view */}
-        <div className="md:flex md:my-12 pb-10">
-          <div className="flex-1 md:mt-16">
+
+        <div className="md:flex md:my-12 pb-10 ">
+          <div className="flex-1 md:mt-16 ">
             <h3 className="font-bold text-2xl my-3">Service Agreement</h3>
             <p className="md:w-4/5 text-lg">
               Our service agreements are tailored to accommodate specific
@@ -35,27 +50,41 @@ const Section2 = () => {
             />
           </div>
         </div>
-        {/*  section 2 laptop view */}
-        <div className="hidden md:flex my-12 pb-10">
-          <div className="flex-1">
-            <img
-              src="/assets/contract-img2.png"
-              className="w-[520px]"
-              alt="contract-image1"
-            />
-          </div>
-          <div className="flex-1 mt-16">
-            <h3 className="font-bold text-2xl my-3">Grants and Funding</h3>
-            <p className="w-6/7 text-lg">
-              MHRI actively pursues grants and funding opportunities to support
-              groundbreaking research and interventions in behavioral health.
-              Collaborating with us through grant-funded projects allows for
-              mutually beneficial partnerships aimed at advancing mental health
-              initiatives.
-            </p>
-          </div>
-        </div>
 
+        {/*  section 2 laptop view */}
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__backInRight animate__delay-0s animate__slower"
+                  : ""
+              }
+            >
+              <div className="hidden md:flex my-12 pb-10">
+                <div className="flex-1">
+                  <img
+                    src="/assets/contract-img2.png"
+                    className="w-[520px]"
+                    alt="contract-image1"
+                  />
+                </div>
+                <div className="flex-1 mt-16">
+                  <h3 className="font-bold text-2xl my-3">
+                    Grants and Funding
+                  </h3>
+                  <p className="w-6/7 text-lg">
+                    MHRI actively pursues grants and funding opportunities to
+                    support groundbreaking research and interventions in
+                    behavioral health. Collaborating with us through
+                    grant-funded projects allows for mutually beneficial
+                    partnerships aimed at advancing mental health initiatives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
         {/* section 2 mobile view */}
         <div className="block md:hidden">
           <div className="mb-6">
@@ -98,27 +127,39 @@ const Section2 = () => {
         </div>
 
         {/*  section 4 laptop view  */}
-        <div className="hidden md:flex my-12 pb-10">
-          <div className="flex-1 ">
-            <img
-              src="/assets/contract-img4.png"
-              className="w-[520px]"
-              alt="contract-image1"
-            />
-          </div>
-          <div className="flex-1 mt-16">
-            <h3 className="font-bold text-2xl my-3">
-              Government Contracts and RFPs
-            </h3>
-            <p className="w-6/7 text-lg ">
-              We actively pursue government contracts and respond to Requests
-              for Proposals (RFPs) related to mental health research, innovative
-              interventions, and policy development. Partnering with us on
-              government contracts enables impactful contributions to mental
-              health initiatives.
-            </p>
-          </div>
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__backInLeft animate__delay-0s animate__slower"
+                  : ""
+              }
+            >
+              <div className="hidden md:flex my-12 pb-10">
+                <div className="flex-1 ">
+                  <img
+                    src="/assets/contract-img4.png"
+                    className="w-[520px]"
+                    alt="contract-image1"
+                  />
+                </div>
+                <div className="flex-1 mt-16">
+                  <h3 className="font-bold text-2xl my-3">
+                    Government Contracts and RFPs
+                  </h3>
+                  <p className="w-6/7 text-lg ">
+                    We actively pursue government contracts and respond to
+                    Requests for Proposals (RFPs) related to mental health
+                    research, innovative interventions, and policy development.
+                    Partnering with us on government contracts enables impactful
+                    contributions to mental health initiatives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </TrackVisibility>
         {/*  section 4 mobile view  */}
         <div className="block md:hidden my-12">
           <div className="mt-16">
