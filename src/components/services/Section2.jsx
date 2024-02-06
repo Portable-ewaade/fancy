@@ -13,7 +13,7 @@ const Section2 = () => {
             <div
               className={
                 isVisible
-                  ? "animate__animated animate__zoomIn animate__delay-0s animate__fast"
+                  ? "animate__animated animate__zoomIn animate__delay-0s animate__slower"
                   : ""
               }
             >

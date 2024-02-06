@@ -1,35 +1,49 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
   return (
     <section className="grid_container pb-12 relative text-lg">
       <main className="wrapper box-sec">
-        <div className="">
-          <h1 className="font-extrabold text-color text-center text-4xl my-10">
-            About MHRI
-          </h1>
-          <p className="font-normal mt-8 tracking-wide">
-            At MotivHealth Research Initiative (MHRI), our unwavering dedication
-            lies in revolutionizing behavioral health. We strategically
-            integrate predictive analytics, innovative interventions, and
-            informed health policies to drive transformative changes. Our
-            commitment transcends boundaries, focused on advancing research
-            methodologies and harnessing cutting-edge technologies to elevate
-            health outcomes for individuals navigating a spectrum of mental
-            health challenges.
-          </p>
-          <p className="font-normal mt-8 tracking-wide">
-            At MotivHealth Research Initiative (MHRI), our identity is rooted in
-            a passionate commitment to transforming behavioral health. We are a
-            team of dedicated professionals, driven by a collective mission to
-            pioneer innovative solutions, inform health policy, and
-            significantly improve outcomes for individuals navigating mental
-            health challenges. MHRI embodies a culture of innovation,
-            collaboration, and compassion. We believe in leveraging data-driven
-            insights, cutting-edge technology, and evidence-based practices to
-            create a profound impact on mental health care delivery.
-          </p>
-        </div>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={
+                isVisible
+                  ? "animate__animated animate__fadeIn animate__delay-0s animate__slower"
+                  : ""
+              }
+            >
+              <div className="">
+                <h1 className="font-extrabold text-color text-center text-4xl my-10">
+                  About MHRI
+                </h1>
+                <p className="font-normal mt-8 tracking-wide">
+                  At MotivHealth Research Initiative (MHRI), our unwavering dedication
+                  lies in revolutionizing behavioral health. We strategically
+                  integrate predictive analytics, innovative interventions, and
+                  informed health policies to drive transformative changes. Our
+                  commitment transcends boundaries, focused on advancing research
+                  methodologies and harnessing cutting-edge technologies to elevate
+                  health outcomes for individuals navigating a spectrum of mental
+                  health challenges.
+                </p>
+                <p className="font-normal mt-8 tracking-wide">
+                  At MotivHealth Research Initiative (MHRI), our identity is rooted in
+                  a passionate commitment to transforming behavioral health. We are a
+                  team of dedicated professionals, driven by a collective mission to
+                  pioneer innovative solutions, inform health policy, and
+                  significantly improve outcomes for individuals navigating mental
+                  health challenges. MHRI embodies a culture of innovation,
+                  collaboration, and compassion. We believe in leveraging data-driven
+                  insights, cutting-edge technology, and evidence-based practices to
+                  create a profound impact on mental health care delivery.
+                </p>
+              </div>
+            </div>
+          )}
+          </TrackVisibility>
+
 
         <div className="push hidden md:block">
           <img

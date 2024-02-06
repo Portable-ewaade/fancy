@@ -12,7 +12,9 @@ const Section2 = () => {
             <div className="">
               <div
                 className={
-                  isVisible ? "animate__animated animate__fadeInU" : ""
+                  isVisible
+                    ? "animate__animated animate__lightSpeedInLeft animate__delay-0.5s animate__slower"
+                    : ""
                 }
               >
                 <h1 className="font-extrabold text-color text-center text-3xl my-12">

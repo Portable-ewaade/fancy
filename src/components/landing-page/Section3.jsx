@@ -15,7 +15,7 @@ const Section3 = () => {
               <div
                 className={
                   isVisible
-                    ? "animate__animated animate__fadeInLeft animate__delay-0.5s"
+                    ? "animate__animated animate__fadeInLeft animate__delay-0.5s animate__slower"
                     : ""
                 }
               >
@@ -48,7 +48,7 @@ const Section3 = () => {
               <div
                 className={
                   isVisible
-                    ? "animate__animated animate__fadeInRight animate__delay-0.5s"
+                    ? "animate__animated animate__fadeInRight animate__delay-0.5s animate__slower"
                     : ""
                 }
               >
