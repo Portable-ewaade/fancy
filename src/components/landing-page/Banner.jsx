@@ -9,7 +9,7 @@ const Banner = () => {
     AOS.init({
       offset: 200,
       duration: 800,
-      // easing: "ease-in-sine",
+      easing: "ease-in-out",
       delay: 100,
     });
   }, []);
@@ -55,9 +55,17 @@ const Banner = () => {
           />
         </div>
       </main>
+      {/* <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE9SJBBG4L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YE9SJBBG4L');
+</script> */}
     </section>
   );
-  console.log(isVisible);
 };
 
 export default Banner;
