@@ -16,7 +16,7 @@ const Section2 = () => {
   return (
     <section className="grid_container pb-12 relative text-lg">
       <main className="wrapper box-sec">
-        <div data-aos="fade-up">
+        <div data-aos="fade-in">
           <div className="">
             <h1 className="font-extrabold text-color text-center text-4xl my-10">
               About MHRI

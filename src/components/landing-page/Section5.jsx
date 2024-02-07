@@ -33,7 +33,7 @@ const Section5 = () => {
             <div
               className={
                 isVisible
-                  ? "animate__animated animate__rotateIn animate__infinite animate__slow animate__delay-0s"
+                  ? "animate__animated animate__rotateIn animate__infinite animate__slower animate__delay-0s"
                   : ""
               }
             >
@@ -49,7 +49,7 @@ const Section5 = () => {
           )}
         </TrackVisibility>
 
-        <div className="text-center md:w-2/6 py-3 my-12 mx-auto bg-white rounded-lg ">
+        <div className="text-center md:w-2/6 py-3 my-12 mx-auto bg-white rounded-lg push">
           <Link
             href="/contact-us"
             className="text-lg font-semibold text-color hover:text-[#0A0A8C]"

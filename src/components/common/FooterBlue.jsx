@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden md:block absolute end-0 md:inset-y-1/4 inset-y-1/2  animate__animated animate__bounce animate__infinite infinite">
+        <div className="hidden md:block absolute end-0 md:inset-y-1/4 inset-y-1/2 bounce">
           <img
             src="/assets/big-logo-white.png"
             alt=""

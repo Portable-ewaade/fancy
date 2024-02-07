@@ -29,7 +29,7 @@ const Banner = () => {
               Personalized interventions for growth and resilience.
             </p>
           </div>
-          <div className="animate__animated animate__bounce animate__infinite md:hidden">
+          <div className="animate__animated animate__bounce animate__infinite animate__slower md:hidden">
             <img src="/assets/mobile-big-logo.png" alt="logo" />
           </div>
         </div>

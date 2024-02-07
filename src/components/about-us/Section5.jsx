@@ -37,26 +37,17 @@ const Section5 = () => {
             </p>
           </div>
           <div>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible
-                      ? "animate__animated animate__slideInU animate__delay-0s animate__slower"
-                      : ""
-                  }
-                >
-                  <div className=" md:flex mt-14 md:absolute end-0">
-                    <img
-                      src="/assets/big-logo-white.png"
-                      alt="home image"
-                      className="w-[450px]"
-                      // width={450}
-                    />
-                  </div>
-                </div>
-              )}
-            </TrackVisibility>
+            <div
+              className=" md:flex mt-14 md:absolute end-0"
+              data-aos="fade-up-left"
+            >
+              <img
+                src="/assets/big-logo-white.png"
+                alt="home image"
+                className="w-[450px]"
+                // width={450}
+              />
+            </div>
           </div>
         </div>
 

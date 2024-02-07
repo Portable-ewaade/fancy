@@ -14,8 +14,8 @@ const Section4 = () => {
   }, []);
   return (
     <section className="grid_container bg-color relative pb-16 text-lg py-10">
-      <main className="wrapper box-sec">
-        <div className="" data-aos="fade-down">
+      <main className="wrapper box-sec" data-aos="fade-down">
+        <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             Our Approach to Behavioral Health
           </h1>
@@ -39,18 +39,17 @@ const Section4 = () => {
           </p>
         </div>
 
-        <div className="push hidden md:block" data-aos="fade-down">
+        <div className="push">
           <img
             src="/assets/home-img2.png"
             alt="home image"
-            className="mx-auto pt-10 pb-10"
+            className="mx-auto pt-10 pb-10  hidden md:block"
           />
-        </div>
-        <div className="push md:hidden">
+
           <img
             src="/assets/mobile-home-img-2.png"
             alt="home image"
-            className="mx-auto pt-10"
+            className="mx-auto pt-10 md:hidden"
           />
         </div>
 

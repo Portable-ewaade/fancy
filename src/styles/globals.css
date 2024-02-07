@@ -88,7 +88,7 @@ h3 {
 }
 .bounce {
   animation-name: bounce;
-  animation-duration: 4s;
+  animation-duration: 5s;
   transition: ease-in-out;
    animation-iteration-count: infinite;
 }
