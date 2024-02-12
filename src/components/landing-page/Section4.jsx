@@ -4,24 +4,15 @@ import "aos/dist/aos.css";
 import TrackVisibility from "react-on-screen";
 
 const Section4 = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 800,
-      // easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
   return (
     <section className="grid_container bg-color relative pb-16 text-lg py-10">
-      <main className="wrapper box-sec" data-aos="fade-down">
+      <main className="wrapper box-sec">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             Our Approach to Behavioral Health
           </h1>
           <p
             className="font-normal text-[1.1rem] mt-8 tracking-wide"
-            data-aos="fade-down"
           >
             At MHRI, our approach blends predictive analytics, robust research
             methodologies, and collaborative partnerships. We use data-driven
@@ -30,7 +21,6 @@ const Section4 = () => {
           </p>
           <p
             className="font-normal mt-8 text-[normal] tracking-wide"
-            data-aos="fade-down"
           >
             Integrating technology and research, we develop personalized
             interventions that adapt to individual needs. Collaboration with
