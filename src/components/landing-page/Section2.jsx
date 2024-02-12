@@ -5,19 +5,11 @@ import "aos/dist/aos.css";
 import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 1500,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
 
   return (
     <section className="grid_container bg-color pb-12 text-lg">
       <main className="wrapper box-sec">
-        <div data-aos="fade-up">
+        <div >
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             About MotivHealth Research Initiative
           </h1>

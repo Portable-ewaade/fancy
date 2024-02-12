@@ -25,7 +25,7 @@ const Section3 = () => {
           <div className="md:flex md:my-12 mt-12 mb-8">
             <div className="flex-1 ">
               <h3 className="font-bold md:text-xl my-3">
-                Healthcare Technology Consulting <br /> and Assistance
+                Healthcare Technology Consulting <br className="hidden md:block" /> and Assistance
               </h3>
               <p className="md:w-5/6">
                 Implementing technology solutions for improved healthcare
@@ -33,18 +33,18 @@ const Section3 = () => {
               </p>
             </div>
             <div className="flex-1 mt-6 md:mt-0">
-              <h3 className="font-bold md:text-xl my-3">
+              <h3 className="font-bold md:text-xl mb-4 mt-3">
                 Research Project Management
               </h3>
               <p className="md:w-6/7">
-                Skillful oversight of AI/ML and behavioral health research
+                Skillful oversight of AI/ML and behavioral health <br /> research
                 initiatives.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="md:flex md:my-12" data-aos="fade-up">
+        <div className="md:flex md:my-0" data-aos="fade-up">
           <div className="flex-1">
             <h3 className="font-bold md:text-xl my-3">
               AI/ML Research and Development
