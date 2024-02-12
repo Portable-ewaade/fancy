@@ -31,9 +31,12 @@
 import "@/styles/globals.css";
 import localFont from "next/font/local";
 import "animate.css";
-
-import { useEffect } from 'react';
-import { initGA, logPageView } from '../../analytics'; // Import the utility you created  
+import { useRouter } from "next/router";
+import Script from "next/script";
+import { useEffect } from "react";
+// import { useEffect } from 'react';
+import * as gtag from "../components/common/analytics"
+import { initGA, logPageView } from '../components/common/analytics'; // Import the utility you created  
 
 const myFont = localFont({
   src: [
@@ -50,16 +53,44 @@ const myFont = localFont({
   ],
 });
 function MyApp({ Component, pageProps }) {
+  // useEffect(() => {
+  //   initGA(); // Initialize Google Analytics
+  //   logPageView(); // Log the initial page view
+
+  //   // Add additional tracking logic as needed
+  // }, []);
+  const router = useRouter();
   useEffect(() => {
-    initGA(); // Initialize Google Analytics
-    logPageView(); // Log the initial page view
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
-    // Add additional tracking logic as needed
-  }, []);
-
-  return  <main style={myFont.style}>
+  return (
+    <main style={myFont.style}>
+      <>
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        />
+        <Script id="google-analytics-script" strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${gtag.GA_TRACKING_ID}', {
+          page_path: window.location.pathname,
+          });
+    `}
+        </Script>
+      </>
       <Component {...pageProps} />
-    </main>;
+    </main>
+  );
 }
 
 export default MyApp;
