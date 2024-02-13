@@ -75,20 +75,7 @@ const Banner = () => {
             autoplaySpeed={500}
             className="md:h-[82vh] h-[70vh] mt-16 z-0"
           >
-            <div className="item">
-              <img
-                src="/assets/about-img-1.png"
-                alt="about carousel image"
-                className=" w-full md:h-[82vh] h-[70vh]"
-              />
-            </div>
-            <div className="item">
-              <img
-                src="/assets/about-img-2.png"
-                alt="about carousel image"
-                className=" w-full md:h-[82vh] h-[70vh]"
-              />
-            </div>
+           
             <div className="item">
               <img
                 src="/assets/about-img-3.png"
