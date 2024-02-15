@@ -92,3 +92,11 @@ h3 {
   transition: ease-in-out;
    animation-iteration-count: infinite;
 }
+
+.disclosure {
+  position: absolute !important;
+  top: 0 !important;
+  transition: initial;
+  padding-top: 8rem;
+  z-index: 0 !important;
+}
