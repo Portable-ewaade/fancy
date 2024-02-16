@@ -1,6 +1,6 @@
 // import ReactGA from "react-ga";
 
-export const GA_TRACKING_ID = "G-YE9SJBBG4L"; //replace it with your measurement id
+export const GA_TRACKING_ID = "G-9TQELG4VQ1"; //replace it with your measurement id
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
   window.gtag("config", GA_TRACKING_ID, {
