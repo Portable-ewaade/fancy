@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="grid-container text-lg relative">
-      <div className="wrapper box-sec py-5 ">
-        <div className="md:grid grid-cols-4">
+    <section className=" text-lg ">
+      <div className="container w-[90%] mx-auto py-5 ">
+        <div className="md:grid grid-cols-4 relative">
           <div className="md:grid col-span-2">
             <Link href="/">
               <img
@@ -72,15 +72,14 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-        </div>
-
-        <div className="hidden md:block absolute end-0 md:inset-y-1/4 inset-y-1/2 bounce">
+        <div className="hidden md:block absolute -end-16 md:inset-y-1/4 inset-y-1/2 bounce">
           <img
             src="/assets/contact-big-logo.png"
             alt=""
             className="md:w-60 w-40"
           />
         </div>
+</div>
 
         <div className="text-center text-xs mb-1 md:mt-20 mt-10 tracking-wide">
           &copy; 2024 Motive Health Research Initiative. All rights reserved.

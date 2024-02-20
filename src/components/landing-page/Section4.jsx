@@ -1,20 +1,18 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TrackVisibility from "react-on-screen";
 
 const Section4 = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
       duration: 800,
-      // easing: "ease-in-sine",
-      delay: 100,
+            delay: 100,
     });
   }, []);
   return (
     <section className="grid_container bg-color relative pb-16 text-lg py-10">
-      <main className="wrapper box-sec" data-aos="fade-down">
+      <main className="wrapper container mx-auto box-sec" data-aos="fade-down">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             Our Approach to Behavioral Health
@@ -53,21 +51,19 @@ const Section4 = () => {
           />
         </div>
 
-        <div className="absolute md:end-10 end-2 md:top-10 top-5">
+        <div className="absolute md:-end-10 end-2 md:top-10 top-5">
           <img
             src="/assets/small-star.png"
             alt="logo"
             className="md:w-[30px] w-[35px]"
-            // width={30}
-          />
+                      />
         </div>
-        <div className="absolute md:start-5 md:inset-y-1/2 start-1 bottom-2">
+        <div className="absolute md:-start-12 md:inset-y-1/2 start-1 bottom-2">
           <img
             src="/assets/small-star.png"
             alt="logo"
             className="md:w-[30px] w-[35px]"
-            // width={30}
-          />
+                      />
         </div>
       </main>
     </section>

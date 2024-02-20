@@ -12,8 +12,8 @@ const Section4 = () => {
     });
   }, []);
   return (
-    <section className="grid_container bg-[#CCF0FF] relative md:pb-16 ">
-      <main className="wrapper box-sec">
+    <section className="grid_container  bg-[#CCF0FF] relative md:pb-16 ">
+      <main className="wrapper  container mx-auto box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           Clinical Research Consulting
         </h1>
@@ -44,8 +44,7 @@ const Section4 = () => {
             src="/assets/half-circle-right-white.png"
             alt="logo"
             className="md:w-[90px] w-[40px]"
-            // width={90}
-          />
+                      />
         </div>
 
         <div className="absolute md:end-20 end-5 bottom-3 md:top-3/4 z-0">
@@ -53,16 +52,14 @@ const Section4 = () => {
             src="/assets/small-white-circle.png"
             alt="logo"
             className="md:w-[25px] w-[20px]"
-            // width={25}
-          />
+                      />
         </div>
         <div className="absolute md:start-1/4 top-10 z-0">
           <img
             src="/assets/small-white-circle.png"
             alt="logo"
             className="md:w-[25px] w-[20px]"
-            // width={25}
-          />
+                      />
         </div>
       </main>
     </section>

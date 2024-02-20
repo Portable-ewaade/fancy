@@ -41,7 +41,7 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_rcgqlja",
+        "service_q4ql5yi",
         "template_cv4yida",
         formElement, // Pass the form element here
         "h323G-r1G3JnKE4c-"
@@ -66,14 +66,14 @@ export const ContactUs = () => {
   return (
     <>
       {step === 0 ? <Banner /> : ""}
-      <main className="grid_container mt-4 lg:h-[100vh] md:h-[70vh] h-[87vh]">
-        <section className="wrapper">
-          <div className="absolute box-sec mx-auto top-[21.5rem] md:top-[27.5rem] start-5 md:start-10">
+      <main className="grid_container container mx-auto mt-4 lg:h-[45rem] md:h-[70vh] h-[87vh]">
+        <div className="absolute md:w-[90rem] w-screen px-5 mx-auto top-[21.5rem] md:top-[27.5rem] ">
             {step === 0 && (
               <form
                 className="card lg:w-1/2 mx-auto my-8 md:p-10 p-5 shadow-lg bg-white text-black rounded-3xl"
                 onSubmit={handleSubmit}
-                ref={form}>
+                ref={form}
+            >
                 <>
                   <label className="font-normal" htmlFor="inputFirstName">
                     First Name
@@ -130,7 +130,8 @@ export const ContactUs = () => {
                         className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:px-2 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] py-1 focus:ring-0 sm:text-sm sm:leading-6 h-[8rem]"
                         placeholder="Send us a message"
                         id="floatingTextarea2"
-                        name="message"></textarea>
+                        name="message"
+                    ></textarea>
                     </div>
                   </div>
                   {/* row */}
@@ -146,9 +147,7 @@ export const ContactUs = () => {
                     </button>
                   </div>
                 </>
-                {formError && (
-                  <div className="text-[red]  mt-2">{formError}</div>
-                )}
+                {formError && <div className="text-[red]  mt-2">{formError}</div>}
               </form>
             )}
           </div>
@@ -162,8 +161,7 @@ export const ContactUs = () => {
               />
             </>
           )}
-        </section>
-      </main>
+              </main>
     </>
   );
 };

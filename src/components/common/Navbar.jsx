@@ -6,13 +6,6 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { linkData } from "@/data/mockData";
 
-// const navigation = [
-//   { name: "About Us", href: "about", current: true },
-//   { name: "Services", href: "services", current: false },
-//   { name: "Contract Vehicles", href: "contract", current: false },
-//   { name: "Contact Us", href: "contact-us", current: false },
-// ];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -23,7 +16,7 @@ export default function Example() {
     <Disclosure as="nav" className="grid_container ">
       {({ open }) => (
         <section className="navbar_container md:px-10 shadow-xl ">
-          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 ">
+          <div className="container w-[100%] mx-auto px-2 sm:px-6 ">
             <div className="relative flex h-18 items-center justify-between">
               <div className="flex flex-1  items-center">
                 <Link href="/">
@@ -59,7 +52,8 @@ export default function Example() {
                           className={`font-[550] text-[#02021C] mx-3 hover:text-[#0A0A8C] ${
                             router.pathname === link.url ? "active" : ""
                           }`}
-                          passHref>
+                          passHref
+                        >
                           {link.title}
                         </Link>
                       </ul>
@@ -83,7 +77,8 @@ export default function Example() {
                     className={`font-[550] mx-3 ${
                       router.pathname === link.url ? "active" : ""
                     }`}
-                    passHref>
+                    passHref
+                  >
                     {link.title}
                   </Link>
                 </ul>
@@ -95,7 +90,3 @@ export default function Example() {
     </Disclosure>
   );
 }
-
-//  "bg-gray-900 text-white"
-//                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
-//                     "block rounded-md px-3 py-2 text-base font-bold "

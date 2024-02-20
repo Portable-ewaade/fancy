@@ -13,7 +13,7 @@ const Section2 = () => {
   }, []);
   return (
     <section className="grid_container bg-color relative md:pb-16 pb-6">
-      <main className="wrapper box-sec">
+      <main className="wrapper  container mx-auto box-sec">
         <div className="">
           <h1 className="font-extrabold text-color text-center text-3xl my-16">
             Human and Health Services Technology <br /> Consulting
@@ -58,8 +58,7 @@ const Section2 = () => {
             src="/assets/half-circle-left.png"
             alt="logo"
             className="md:w-[90px] w-[45px]"
-            // width={90}
-          />
+                      />
         </div>
 
         <div className="absolute end-10 top-5 z-0">
@@ -75,16 +74,14 @@ const Section2 = () => {
             src="/assets/blue-star.png"
             alt="logo"
             className="md:w-[27px] w-[23px] "
-            // width={27}
-          />
+                      />
         </div>
         <div className="absolute md:end-20 end-4 md:top-3/4 z-0">
           <img
             src="/assets/small-dark-star.png"
             alt="logo"
             className="md:w-[25px] w-[20px] "
-            // width={25}
-          />
+                      />
         </div>
       </main>
     </section>

@@ -52,8 +52,8 @@ const Banner = () => {
 
   return (
     <>
-      <section className="grid_container relative ">
-        <div className="wrapper z-0">
+      <section className=" container mx-auto relative z-0">
+        <div className=" w-[100%] mx-auto h-auto">
           <div
             className=" text-white absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14 animate__animated animate__fadeIn animate__delay-0s"
             data-aos="fade-up-right"
@@ -75,7 +75,7 @@ const Banner = () => {
             autoplaySpeed={500}
             className="md:h-[82vh] h-[70vh] mt-16 z-0"
           >
-           
+
             <div className="item">
               <img
                 src="/assets/about-img-3.png"

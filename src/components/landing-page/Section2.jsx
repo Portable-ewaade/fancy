@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
   useEffect(() => {
@@ -16,7 +15,7 @@ const Section2 = () => {
 
   return (
     <section className="grid_container bg-color pb-12 text-lg">
-      <main className="wrapper box-sec">
+      <main className="wrapper container mx-auto box-sec">
         <div data-aos="fade-up">
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             About MotivHealth Research Initiative
@@ -26,11 +25,10 @@ const Section2 = () => {
             to revolutionizing behavioral health through data-driven insights,
             technology, and innovative interventions. Our commitment lies in
             transforming mental health by advancing research with predictive
-            analytics.{" "}
+            analytics.
           </p>
           <p className="font-normal mt-8 tracking-wide">
-            {" "}
-            MHRI is a passionate collective, striving to reshape behavioral
+                        MHRI is a passionate collective, striving to reshape behavioral
             health by pioneering solutions, influencing health policy, and
             improving outcomes. We embody a culture of innovation,
             collaboration, and compassion, leveraging data, technology, and

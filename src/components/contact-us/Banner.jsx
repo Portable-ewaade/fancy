@@ -1,10 +1,9 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-//import { ContactForm } from '.';
 
 const Banner = () => {
   return (
-    <section className="grid_container relative lg:h-[83vh] h-[65vh] md:bg-[#03032F] bg-[#07075D] mb-20">
+    <section className="grid_container container mx-auto relative lg:h-[40rem] h-[65vh] md:bg-[#03032F] bg-[#07075D] mb-20">
       <main className="wrapper">
         <TrackVisibility>
           {({ isVisible }) => (
@@ -19,7 +18,7 @@ const Banner = () => {
                 <h1 className="md:text-4xl text-3xl font-extrabold md:leading-tight leading-tight tracking-wide">
                   Learn how we are revolutionizing <br /> behavioral health.
                 </h1>
-                <p className="md:text-xl font-bold tracking-wide mt-5 ">
+                <p className="md:text-xl text-sm font-bold tracking-wide mt-5 ">
                   Need more information or interested in collaborating with{" "}
                   <br className="hidden md:block" /> us? Feel free to reach out.
                 </p>
@@ -33,8 +32,7 @@ const Banner = () => {
             src="/assets/contact-big-logo.png"
             alt="logo"
             className="md:w-[290px] "
-            //width={290}
-          />
+                      />
         </div>
         {/* laptop view */}
         <div className="hidden lg:block absolute end-0 top-12">
@@ -42,8 +40,7 @@ const Banner = () => {
             src="/assets/three-circles.png"
             alt="logo"
             className="w-[350px]"
-            // width={350}
-          />
+                      />
         </div>
         {/* mobile view */}
         <div className="lg:hidden block absolute end-0 top-12">
@@ -51,17 +48,9 @@ const Banner = () => {
             src="/assets/three-circle-mobile.png"
             alt="logo"
             className=" w-[50px] md:w-[70px] h-[430px]"
-            // width={350}
-          />
+                      />
         </div>
-        {/* <div className="absolute end-0 top-10">
-          <img
-            src="/assets/blue-right.png"
-            alt="logo"
-            className=""
-            width={550}
-          />
-        </div> */}
+
       </main>
     </section>
   );
