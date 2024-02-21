@@ -66,12 +66,12 @@ export const ContactUs = () => {
   return (
     <>
       {step === 0 ? <Banner /> : ""}
-      <main className="grid_container mt-4 relative h-[95vh]">
+      <main className="grid_container mt-4 lg:h-[100vh] md:h-[70vh] h-[87vh]">
         <section className="wrapper">
-          <div className=" absolute box-sec mx-auto bottom-0">
+          <div className="absolute box-sec mx-auto top-[21.5rem] md:top-[27.5rem] start-5 md:start-10">
             {step === 0 && (
               <form
-                className="card w-1/2 mx-auto my-8 p-10 shadow-lg bg-white text-black rounded-lg"
+                className="card lg:w-1/2 mx-auto my-8 md:p-10 p-5 shadow-lg bg-white text-black rounded-3xl"
                 onSubmit={handleSubmit}
                 ref={form}>
                 <>
@@ -80,7 +80,7 @@ export const ContactUs = () => {
                   </label>
                   <input
                     type="text"
-                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
+                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="first_name"
                     placeholder="Enter your first name"
                   />
@@ -89,7 +89,7 @@ export const ContactUs = () => {
                   </label>
                   <input
                     type="text"
-                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
+                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
                     name="last_name"
                     placeholder="Enter your Last name"
                   />
@@ -98,7 +98,7 @@ export const ContactUs = () => {
                   </label>
                   <input
                     type="email"
-                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
+                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] focus:ring-0 sm:text-sm sm:leading-6"
                     name="email_address"
                     placeholder="Enter your email address"
                   />
@@ -107,7 +107,7 @@ export const ContactUs = () => {
                   </label>
                   <input
                     type="tel"
-                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
+                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] focus:ring-0 sm:text-sm sm:leading-6"
                     name="phone_number"
                     placeholder="Enter your valid phone number"
                   />
@@ -116,7 +116,7 @@ export const ContactUs = () => {
                   </label>
                   <input
                     type="text"
-                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 focus:ring-0 sm:text-sm sm:leading-6"
+                    className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:p-2 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] focus:ring-0 sm:text-sm sm:leading-6"
                     name="company_name"
                     placeholder="Enter your company or business name"
                   />
@@ -127,7 +127,7 @@ export const ContactUs = () => {
                     </label>
                     <div className="form-floating">
                       <textarea
-                        className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:px-2 py-1 focus:ring-0 sm:text-sm sm:leading-6 h-[8rem]"
+                        className="mb-5 mt-1 block flex-1 border-[0.7px] border-slate-400 rounded-lg w-full bg-transparent py-2.5 pl-1 text-gray-900 placeholder:text-gray-400 placeholder:px-2 placeholder:text-sm md:placeholder:text-[1.1rem] lg:placeholder:text-[0.9rem] py-1 focus:ring-0 sm:text-sm sm:leading-6 h-[8rem]"
                         placeholder="Send us a message"
                         id="floatingTextarea2"
                         name="message"></textarea>
@@ -153,16 +153,15 @@ export const ContactUs = () => {
             )}
           </div>
 
-
-        {step === 1 && (
-          <>
-            <Message
-              title={`Thank You for Contacting Us.`}
-              status="success"
-              buttonText="Go Back To Home Page"
-            />
-          </>
-        )}
+          {step === 1 && (
+            <>
+              <Message
+                title={`Thank You for Contacting Us.`}
+                status="success"
+                buttonText="Go Back To Home Page"
+              />
+            </>
+          )}
         </section>
       </main>
     </>

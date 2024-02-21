@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import TrackVisibility from "react-on-screen";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section5 = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <section className="grid_container bg-color2 relative  text-white text-lg">
       <main className="wrapper box-sec">
-        <div className="flex">
-          <div className="flex-1 mt-20 pt-10">
-            <h1 className="font-extrabold text-3xl mt-20 mb-5">
+        <div className="md:flex">
+          <div className="md:flex-1 md:mt-20 md:pt-10">
+            <h1
+              className="font-extrabold text-3xl mt-20 mb-5 text-center md:text-start"
+              data-aos="fade-up-right"
+            >
+              {" "}
               Our Impact and Commitment
             </h1>
-            <p className="font-normal mt-5 tracking-wide md:w-3/5 ">
+            <p
+              className="font-normal mt-5 tracking-wide md:w-3/5 "
+              data-aos="fade-up-right"
+            >
               Aligned with our mission, vision, and objectives, MotivHealth
               Research Initiative is committed to making a meaningful impact on
               the lives of individuals facing mental health challenges. We
@@ -18,30 +36,43 @@ const Section5 = () => {
               vulnerable and underserved populations.
             </p>
           </div>
-
-          <div className="flex mt-7 absolute end-0">
-            <img
-              src="/assets/big-logo-white.png"
-              alt="home image"
-              className=""
-              width={450}
-            />
+          <div>
+            <div
+              className=" md:flex mt-14 md:absolute end-0"
+              data-aos="fade-up-left"
+            >
+              <img
+                src="/assets/big-logo-white.png"
+                alt="home image"
+                className="w-[450px]"
+                // width={450}
+              />
+            </div>
           </div>
         </div>
 
         <div>
-          <div className=" pt-10 pb-14">
-            <h1 className="font-extrabold text-3xl mt-20 mb-5">
+          <div className=" md:pt-10 pb-14">
+            <h1
+              className="font-extrabold text-3xl mt-20 mb-5"
+              data-aos="fade-up-right"
+            >
               Our Core Values
             </h1>
-            <p className="font-normal mt-5 tracking-wide md:w-3/5 ">
+            <p
+              className="font-normal mt-5 tracking-wide md:w-3/5 "
+              data-aos="fade-up-right"
+            >
               Our identity is forged upon three core values.
             </p>
           </div>
 
           <div className="pb-10 ">
-            <div className="flex">
-              <div className="flex-1 my-8 me-8 p-5 shadow-lg bg-white text-black rounded-lg">
+            <div className="md:flex">
+              <div
+                className="push flex-1 my-8 md:me-8 p-5 shadow-lg bg-white text-black rounded-lg"
+                data-aos="fade-up"
+              >
                 <h1 className="text-color text-2xl font-bold mt-1">
                   Innovation
                 </h1>
@@ -51,7 +82,10 @@ const Section5 = () => {
                   research boundaries, aiming for transformative change.
                 </p>
               </div>
-              <div className="flex-1 m-8 p-5 shadow-lg bg-white text-black rounded-lg">
+              <div
+                className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg"
+                data-aos="fade-down"
+              >
                 <h1 className="text-color text-2xl font-bold mt-2">
                   Collaboration
                 </h1>
@@ -61,8 +95,14 @@ const Section5 = () => {
                   groups, to create powerful solutions together
                 </p>
               </div>
-              <div className="flex-1 m-8 p-5 shadow-lg bg-white text-black rounded-lg">
-                <h1 className="text-color text-2xl font-bold mt-2">
+              <div
+                className="push flex-1 md:m-8 p-5 shadow-lg bg-white text-black rounded-lg my-8"
+                data-aos="fade-up"
+              >
+                <h1
+                  className="text-color text-2xl font-bold mt-2"
+                  data-aos="fade-up"
+                >
                   Compassion
                 </h1>
                 <p className="mt-2">

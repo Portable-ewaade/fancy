@@ -1,10 +1,15 @@
-import React from "react";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import TrackVisibility from "react-on-screen";
 
 const Section2 = () => {
+
   return (
     <section className="grid_container bg-color pb-12 text-lg">
       <main className="wrapper box-sec">
-        <div className="">
+        <div >
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             About MotivHealth Research Initiative
           </h1>
@@ -23,22 +28,28 @@ const Section2 = () => {
             collaboration, and compassion, leveraging data, technology, and
             evidence-based practices to impact mental health care delivery.
           </p>
-        </div>
 
-        <div>
-          <img
-            src="/assets/home-img1.png"
-            alt="home image"
-            className="mx-auto pt-10"
-            height={500}
-          />
+          <div className="push">
+            <img
+              src="/assets/home-img1.png"
+              alt="home image"
+              className="mx-auto pt-10 hidden md:block"
+              height={500}
+            />
+            <img
+              src="/assets/mobile-home-img.png"
+              alt="home image"
+              className="mx-auto pt-10 md:hidden"
+              height={500}
+            />
 
-          <a
-            href="#"
-            className="text-color font-extrabold text-xs underline underline-offset-4"
-          >
-            See more about us
-          </a>
+            <Link
+              href="/about"
+              className="text-color font-extrabold text-xs underline underline-offset-4 hover:text-[#0A0A8C]"
+            >
+              See more about us
+            </Link>
+          </div>
         </div>
       </main>
     </section>
