@@ -22,7 +22,7 @@ const Section5 = () => {
         height: "auto",
       }}
     >
-      <main className="wrapper box-sec">
+      <main className="wrapper  container mx-auto box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           AI/ML Research and Development
         </h1>

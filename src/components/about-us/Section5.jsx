@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import TrackVisibility from "react-on-screen";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,19 +13,18 @@ const Section5 = () => {
     });
   }, []);
   return (
-    <section className="grid_container bg-color2 relative  text-white text-lg">
-      <main className="wrapper box-sec">
-        <div className="md:flex">
-          <div className="md:flex-1 md:mt-20 md:pt-10">
+    <section className="bg-color2 text-white text-lg">
+      <main className="container w-[90%] mx-auto">
+        <div className="grid md:grid-cols-2 relative">
+          <div className="md:mt-20 md:pt-10">
             <h1
               className="font-extrabold text-3xl mt-20 mb-5 text-center md:text-start"
               data-aos="fade-up-right"
             >
-              {" "}
-              Our Impact and Commitment
+                            Our Impact and Commitment
             </h1>
             <p
-              className="font-normal mt-5 tracking-wide md:w-3/5 "
+              className="font-normal mt-5 tracking-wide "
               data-aos="fade-up-right"
             >
               Aligned with our mission, vision, and objectives, MotivHealth
@@ -37,15 +36,12 @@ const Section5 = () => {
             </p>
           </div>
           <div>
-            <div
-              className=" md:flex mt-14 md:absolute end-0"
-              data-aos="fade-up-left"
-            >
+            <div className="mt-14 md:absolute -end-16" data-aos="fade-up-left">
               <img
                 src="/assets/big-logo-white.png"
                 alt="home image"
                 className="w-[450px]"
-                // width={450}
+// width={450}
               />
             </div>
           </div>

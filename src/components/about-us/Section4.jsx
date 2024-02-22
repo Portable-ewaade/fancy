@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import TrackVisibility from "react-on-screen";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Section4 = () => {
@@ -12,11 +12,8 @@ const Section4 = () => {
     });
   }, []);
   return (
-    <section
-      className="grid_container pb-12 relative text-lg "
-
-    >
-      <main className="wrapper box-sec">
+    <section className=" container mx-auto pb-12 relative text-lg ">
+      <main className=" w-[90%] mx-auto py-5">
         <div className="" data-aos="fade-up">
           <h1 className="font-extrabold text-color text-center text-4xl my-10">
             Our Objectives
@@ -24,7 +21,7 @@ const Section4 = () => {
         </div>
 
         <div className="md:grid grid-rows-4 grid-flow-col gap-4">
-          <div className="my-9 md:my-2"  data-aos="fade-up">
+          <div className="my-9 md:my-2" data-aos="fade-up">
             <h3 className="font-bold text-2xl my-2">
               Conducting Cutting-edge Research
             </h3>
@@ -35,7 +32,7 @@ const Section4 = () => {
               proven interventions for mental health challenges.
             </p>
           </div>
-          <div className="my-9 md:my-2"  data-aos="fade-up">
+          <div className="my-9 md:my-2" data-aos="fade-up">
             <h3 className="font-bold text-2xl my-2">
               Developing Innovative Interventions
             </h3>

@@ -18,11 +18,10 @@ const Section3 = () => {
         backgroundImage: 'url("/assets/service-bg2.png")',
         backgroundRepeat: "none",
         backgroundSize: "cover",
-        // backgroundPosition: "center",
-        height: "auto",
+                height: "auto",
       }}
     >
-      <main className="wrapper box-sec">
+      <main className="wrapper  container mx-auto box-sec">
         <h1 className="font-extrabold text-color text-center text-3xl my-16">
           Research Project Management
         </h1>

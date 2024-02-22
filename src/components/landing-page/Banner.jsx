@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TrackVisibility from "react-on-screen";
-// import "animate.css";
 
 const Banner = () => {
   useEffect(() => {
@@ -15,15 +13,15 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="grid_container relative h-screen">
+    <section className="grid_container relative md:h-[45rem] h-auto  container mx-auto">
       <main className="wrapper mt-20 pt-20 ">
         <div data-aos="fade-up-right">
           <div className="md:text-center md:pt-20 px-5 lg:me-10 ">
             <h1 className=" md:text-5xl text-4xl font-extrabold text-color-banner md:pt-20 leading-tight md:leading-tight tracking-wide">
-              Transforming <br className="block md:hidden" />{" "}
-              <span className="text-color2"> mental health</span> with{" "}
-              <br className="hidden md:block" />{" "}
-              <span className="text-color2">predictive</span> analytics.
+              Transforming <br className="block md:hidden" />
+              <span className="text-color2"> mental health</span> with
+              <br className="hidden md:block" />
+              <span className="text-color2"> predictive</span> analytics.
             </h1>
             <p className="text-xl mt-5 tracking-wide font-normal">
               Personalized interventions for growth and resilience.
@@ -43,28 +41,17 @@ const Banner = () => {
             src="/assets/blue-left.png"
             alt="logo"
             className="md:w-[550px] w-[250px]"
-            // width={550}
-          />
+                      />
         </div>
         <div className="absolute end-0 top-10">
           <img
             src="/assets/blue-right.png"
             alt="logo"
             className="md:w-[550px] w-[250px]"
-            // width={550}
-          />
+                      />
         </div>
       </main>
-      {/* <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE9SJBBG4L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE9SJBBG4L');
-</script> */}
-    </section>
+          </section>
   );
 };
 
