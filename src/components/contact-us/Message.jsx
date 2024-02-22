@@ -6,7 +6,7 @@ const Message = ({ title, buttonText }) => {
 
   return (
     <section className="grid-container">
-      <main className="wrapper container mx-auto mt-20 pt-20">
+      <main className="w-[100vw] container mx-auto mt-20 pt-20">
         <div className="text-black lg:pt-20 lg:mt-10">
           <div className="text-center">
             <h1 className="font-bold text-3xl mb-3">{title}</h1>

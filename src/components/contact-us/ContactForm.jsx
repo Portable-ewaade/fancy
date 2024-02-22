@@ -41,10 +41,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_q4ql5yi",
-        "template_cv4yida",
+        "service_2ss266g",
+        "template_79ygrae",
         formElement, // Pass the form element here
-        "h323G-r1G3JnKE4c-"
+        "a0T_iFf0f-ZPPXmky"
       )
       .then(
         (result) => {
