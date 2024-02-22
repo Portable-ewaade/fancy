@@ -7,7 +7,7 @@ const Section4 = () => {
     AOS.init({
       offset: 200,
       duration: 800,
-            delay: 100,
+      delay: 100,
     });
   }, []);
   return (
@@ -17,19 +17,13 @@ const Section4 = () => {
           <h1 className="font-extrabold text-color text-center text-3xl my-12">
             Our Approach to Behavioral Health
           </h1>
-          <p
-            className="font-normal text-[1.1rem] mt-8 tracking-wide"
-            data-aos="fade-down"
-          >
+          <p className="font-normal text-[1.1rem] mt-8 tracking-wide">
             At MHRI, our approach blends predictive analytics, robust research
             methodologies, and collaborative partnerships. We use data-driven
             insights to create impactful interventions tackling behavioral
             health challenges.
           </p>
-          <p
-            className="font-normal mt-8 text-[normal] tracking-wide"
-            data-aos="fade-down"
-          >
+          <p className="font-normal mt-8 text-[normal] tracking-wide">
             Integrating technology and research, we develop personalized
             interventions that adapt to individual needs. Collaboration with
             diverse stakeholders ensures cultural sensitivity and practicality
@@ -56,14 +50,14 @@ const Section4 = () => {
             src="/assets/small-star.png"
             alt="logo"
             className="md:w-[30px] w-[35px]"
-                      />
+          />
         </div>
         <div className="absolute md:-start-12 md:inset-y-1/2 start-1 bottom-2">
           <img
             src="/assets/small-star.png"
             alt="logo"
             className="md:w-[30px] w-[35px]"
-                      />
+          />
         </div>
       </main>
     </section>

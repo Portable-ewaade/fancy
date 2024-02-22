@@ -4,14 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Section2 = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 1500,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-  }, []);
 
   return (
     <section className="grid_container bg-color pb-12 text-lg">
