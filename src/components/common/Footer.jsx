@@ -72,14 +72,16 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-        <div className="hidden md:block absolute -end-16 md:inset-y-1/4 inset-y-1/2 bounce">
+
+          <div className="hidden md:block absolute -end-16 md:inset-y-1/4 inset-y-1/2 bounce">
           <img
             src="/assets/contact-big-logo.png"
             alt=""
             className="md:w-60 w-40"
           />
+
+          </div>
         </div>
-</div>
 
         <div className="text-center text-xs mb-1 md:mt-20 mt-10 tracking-wide">
           &copy; 2024 Motive Health Research Initiative. All rights reserved.

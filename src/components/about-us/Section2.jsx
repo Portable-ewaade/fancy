@@ -14,8 +14,8 @@ const Section2 = () => {
   }, []);
 
   return (
-    <section className=" pb-12  container mx-auto relative text-lg">
-      <main className=" w-[90%] mx-auto py-5">
+    <section className=" pb-12 relative text-lg">
+      <main className="  container mx-auto w-[90%] py-5 ">
         <div data-aos="fade-in">
           <div className="">
             <h1 className="font-extrabold text-color text-center text-4xl my-10">

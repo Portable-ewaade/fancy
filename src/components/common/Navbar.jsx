@@ -13,9 +13,9 @@ function classNames(...classes) {
 export default function Example() {
   const router = useRouter(); // Use the useRouter hook
   return (
-    <Disclosure as="nav" className="grid_container">
+    <Disclosure as="nav" className="grid_container ">
       {({ open }) => (
-        <section className="navbar_container md:px-10 shadow-xl ">
+        <section className="navbar_container md:px-10 shadow-xl">
           <div className="container w-[100%] mx-auto px-2 sm:px-6 ">
             <div className="relative flex h-18 items-center justify-between">
               <div className="flex flex-1  items-center">

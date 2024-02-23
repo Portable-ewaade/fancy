@@ -13,9 +13,9 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="grid_container md:h-[45rem] h-auto">
-      <main className="container mx-auto wrapper ">
-        <div className="grid grid-cols-1 relative">
+    <section className="container mx-auto md:h-[45rem] w-[100vw] h-auto">
+      <main className="">
+        <div className="grid grid-cols-1 ">
           <div data-aos="fade-up-right" className="mt-20 pt-20">
             <div className="md:text-center md:pt-20 px-5 lg:me-10 ">
               <h1 className=" md:text-5xl text-4xl font-extrabold text-color-banner md:pt-20 leading-tight md:leading-tight tracking-wide">
@@ -33,29 +33,29 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="roll absolute end-0 top-20 mt-10 hidden md:block">
+          <div className="roll absolute  -end-16 top-20 mt-10 hidden md:block">
             <img
               src="/assets/big-logo.png"
               alt="logo"
               className=""
-              width={350}
+              width={330}
             />
           </div>
+        </div>
 
-          <div className="absolute start-0 top-10">
-            <img
-              src="/assets/blue-left.png"
-              alt="logo"
-              className="md:w-[550px] w-[250px]"
-            />
-          </div>
-          <div className="absolute end-0 top-10">
-            <img
-              src="/assets/blue-right.png"
-              alt="logo"
-              className="md:w-[550px] w-[250px]"
-            />
-          </div>
+        <div className="absolute start-0 top-10">
+          <img
+            src="/assets/blue-left.png"
+            alt="logo"
+            className="md:w-[550px] w-[250px]"
+          />
+        </div>
+        <div className="absolute end-0 top-10">
+          <img
+            src="/assets/blue-right.png"
+            alt="logo"
+            className="md:w-[550px] w-[250px]"
+          />
         </div>
       </main>
     </section>

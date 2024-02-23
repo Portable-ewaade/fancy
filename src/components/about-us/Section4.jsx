@@ -12,8 +12,8 @@ const Section4 = () => {
     });
   }, []);
   return (
-    <section className=" container mx-auto pb-12 relative text-lg ">
-      <main className=" w-[90%] mx-auto py-5">
+    <section className="  pb-12 relative text-lg ">
+      <main className="container mx-auto w-[90%] py-5">
         <div className="" data-aos="fade-up">
           <h1 className="font-extrabold text-color text-center text-4xl my-10">
             Our Objectives
