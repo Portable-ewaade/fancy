@@ -68,7 +68,7 @@ export const ContactUs = () => {
   return (
     <>
       {step === 0 ? <Banner /> : ""}
-      <main className="grid_container  2xl:container mx-auto mt-4 lg:h-[45rem] md:h-[70vh] h-[87vh]">
+      <main className="grid_container  2xl:container mx-auto mt-4 lg:h-[45rem] md:h-[70vh] h-[97vh]">
         <div className="absolute md:w-[80rem] w-screen px-5 mx-auto top-[21.5rem] md:top-[27.5rem] ">
           {step === 0 && (
             <form
@@ -149,7 +149,7 @@ export const ContactUs = () => {
                   >
                     {loading ? "Sending..." : "Send"}
                   </button>
-                
+
                 </div>
               </>
               {formError && <div className="text-[red]  mt-2">{formError}</div>}
