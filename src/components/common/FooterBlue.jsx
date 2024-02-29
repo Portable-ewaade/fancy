@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <section className=" bg-[#0A0A8C] text-white text-lg ">
       <div className="container w-[90%] mx-auto py-5">
-        <div className="md:grid grid-cols-4 relative">
-          <div className="md:grid col-span-2">
+        <div className="relative grid-cols-4 md:grid">
+          <div className="col-span-2 md:grid">
             <Link href="/">
               <img
                 src="/assets/nav-logo-white.png"
@@ -14,7 +14,7 @@ const Footer = () => {
                 className="h-16 mt-6"
               />
             </Link>
-            <p className=" md:font-light lg:font-semibold text-sm ">
+            <p className="text-sm  md:font-light lg:font-semibold">
               Transforming behavioral <br /> health.
             </p>
             <Link href="mailto:marvellous@motivhealth.org" className="text-sm">
@@ -24,7 +24,7 @@ const Footer = () => {
 
           <div className="">
             <ul>
-              <h6 className="font-extrabold mt-8 mb-4 "> Company</h6>
+              <h6 className="mt-8 mb-4 font-extrabold "> Company</h6>
             </ul>
             <ul className="my-3">
               <Link href="/contact-us" className="font-light">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="">
             <ul>
-              <h6 className="font-extrabold mt-8 mb-4"> Connect</h6>
+              <h6 className="mt-8 mb-4 font-extrabold"> Connect</h6>
             </ul>
             <ul className="my-3">
               <Link href="#" className="font-light">
@@ -62,17 +62,17 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-        <div className="hidden md:block absolute -end-16 md:inset-y-1/4 inset-y-1/2 bounce">
+        <div className="absolute hidden md:block -end-16 md:inset-y-1/4 inset-y-1/2 bounce">
           <img
             src="/assets/big-logo-white.png"
             alt=""
-            className="md:w-60 w-40"
+            className="w-40 md:w-60"
           />
         </div>
 </div>
 
-        <div className="text-center text-xs mb-1 md:mt-20 mt-10 tracking-wide">
-          &copy; 2024 Motive Health Research Initiative. All rights reserved.
+        <div className="mt-10 mb-1 text-xs tracking-wide text-center md:mt-20">
+          &copy; 2024 MotivHealth Research Initiative. All rights reserved.
         </div>
       </div>
     </section>
