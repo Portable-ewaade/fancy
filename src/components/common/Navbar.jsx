@@ -13,13 +13,10 @@ function classNames(...classes) {
 export default function Example() {
   const router = useRouter(); // Use the useRouter hook
   return (
-    <Disclosure as="nav" className="grid_container">
+    <Disclosure as="nav" className="grid_container ">
       {({ open }) => (
-        <section className="navbar_container md:px-10 shadow-xl relative">
-          {/* Apply backdrop filter when the navbar is opened */}
-          <div className={`backdrop-filter  ${open ? 'bg-gray-600 bg-opacity-50' : ''} fixed inset-0 z-0`} />
-
-          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 relative z-10">
+        <section className="navbar_container md:px-10 shadow-xl">
+          <div className="container w-[100%] mx-auto px-2 sm:px-6 ">
             <div className="relative flex h-18 items-center justify-between">
               <div className="flex flex-1  items-center">
                 <Link href="/">
@@ -55,7 +52,8 @@ export default function Example() {
                           className={`font-[550] text-[#02021C] mx-3 hover:text-[#0A0A8C] ${
                             router.pathname === link.url ? "active" : ""
                           }`}
-                          passHref>
+                          passHref
+                        >
                           {link.title}
                         </Link>
                       </ul>
@@ -79,7 +77,8 @@ export default function Example() {
                     className={`font-[550] mx-3 ${
                       router.pathname === link.url ? "active" : ""
                     }`}
-                    passHref>
+                    passHref
+                  >
                     {link.title}
                   </Link>
                 </ul>

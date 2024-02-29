@@ -2,21 +2,19 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TrackVisibility from "react-on-screen";
 
 const Section3 = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
       duration: 800,
-      // easing: "ease-in-sine",
-      delay: 100,
+            delay: 100,
     });
   }, []);
 
   return (
     <section className="grid_container bg-white relative pb-16 text-lg">
-      <main className="wrapper box-sec">
+      <main className="wrapper container mx-auto box-sec">
         <div className="" data-aos="fade-up">
           <h1 className="font-extrabold text-color text-center md:text-3xl text-2xl my-16">
             Tailored Comprehensive Solutions
@@ -36,8 +34,8 @@ const Section3 = () => {
               <h3 className="font-bold md:text-xl mb-4 mt-3">
                 Research Project Management
               </h3>
-              <p className="md:w-6/7">
-                Skillful oversight of AI/ML and behavioral health <br /> research
+              <p className="md:w-6/7 mt-3">
+                Skillful oversight of AI/ML and behavioral health <br className="hidden md:block" /> research
                 initiatives.
               </p>
             </div>
@@ -77,16 +75,14 @@ const Section3 = () => {
             src="/assets/half-circle-left.png"
             alt="logo"
             className="md:w-[95px] w-[43px]"
-            // width={140}
-          />
+                      />
         </div>
         <div className="absolute end-0 md:inset-y-1/2 bottom-0">
           <img
             src="/assets/half-cicle-right.png"
             alt="logo"
             className="md:w-[80px] w-[40px]"
-            // width={80}
-          />
+                      />
         </div>
       </main>
     </section>

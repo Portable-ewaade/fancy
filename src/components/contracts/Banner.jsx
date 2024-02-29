@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic"; // Import dynamic for client-side rendering
-import TrackVisibility from "react-on-screen";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 var $ = require("jquery");
@@ -50,9 +50,12 @@ const Banner = () => {
     },
   };
   return (
-    <section className="grid_container relative " data-aos="fade-up-right">
+    <section
+      className="grid_container relative  2xl:container mx-auto "
+      data-aos="fade-up-right"
+    >
       <div className="wrapper z-0">
-        <div className=" text-[#03032F] absolute md:top-1/3 top-1/4 md:start-20 start-5 z-10 mt-14">
+        <div className=" text-[#03032F] absolute md:top-1/3 top-1/4 md:start-24 start-5 z-10 mt-14">
           <h1 className="md:text-5xl text-[2.5rem] font-extrabold md:leading-tight leading-tight">
             Flexible collaboration <br /> models.
           </h1>

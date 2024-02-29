@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import TrackVisibility from "react-on-screen";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,7 @@ const Section2 = () => {
   }, []);
   return (
     <section className="grid_container bg-white relative pb-16 z-0">
-      <main className="wrapper box-sec">
+      <main className="wrapper  container mx-auto box-sec">
         <div className="mb-10 z-10" div data-aos="fade-up">
           <h1 className="font-extrabold text-color text-center text-3xl mt-12 mb-4">
             Versatile <span className="text-color2">Partnership</span> Options
@@ -195,40 +195,35 @@ const Section2 = () => {
             src="/assets/small-circle.png"
             alt="logo"
             className="md:w-[50px] w-[30px]"
-            // width={50}
-          />
+                      />
         </div>
         <div className="absolute md:start-5 start-2 md:inset-y-1/3 inset-y-1/2 md:mt-64 mt-96 pt-7  ">
           <img
             src="/assets/small-circle.png"
             alt="logo"
             className="md:w-[45px] w-[25px]"
-            // width={45}
-          />
+                      />
         </div>
         <div className="absolute end-0 md:inset-y-1/3 inset-y-1/3 mt-96 md:mt-10">
           <img
             src="/assets/half-cicle-right.png"
             alt="logo"
             className="md:w-[180px] w-[35px] z-0"
-            // width={180}
-          />
+                      />
         </div>
         <div className="absolute end-5 bottom-7">
           <img
             src="/assets/small-circle.png"
             alt="design"
             className="md:w-[50px] w-[30px]"
-            // width={50}
-          />
+                      />
         </div>
         <div className="half-circle absolute start-0 md:bottom-10 bottom-0">
           <img
             src="/assets/half-circle-left.png"
             alt="design"
             className="md:w-[95px] w-[90px]"
-            // width={155}
-          />
+                      />
         </div>
       </main>
     </section>
