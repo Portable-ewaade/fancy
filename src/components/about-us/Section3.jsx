@@ -11,11 +11,11 @@ useEffect(() => {
       });
     }, []);
   return (
-    <section className=" bg-white relative md:pb-16 pb-7 text-lg ">
+    <section className="relative text-lg bg-white md:pb-16 pb-7">
       <main className="container w-[90%] mx-auto py-5">
-        <div className=" md:flex my-12 ">
+        <div className="my-12 md:flex">
           <div className="flex-1" data-aos="fade-up-right">
-                  <h3 className="text-color2 font-extrabold md:text-2xl text-3xl mt-2 mb-1 text-center md:text-start">
+                  <h3 className="mt-2 mb-1 text-3xl font-extrabold text-center text-color2 md:text-2xl md:text-start">
                     Our Mission
                   </h3>
                   <hr className="text-color2 md:w-1/2 w-3/4 border-[0.1rem] border-[#00B4FE] mb-4 mx-auto md:mx-0 " />
@@ -28,8 +28,8 @@ useEffect(() => {
                   </p>
                 </div>
 
-                <div className="flex-1 md:ms-2 mt-16 md:my-0" data-aos="fade-up-left">
-                  <h3 className=" text-color2 font-extrabold md:text-2xl text-3xl mt-2 mb-1 text-center md:text-start ">
+                <div className="flex-1 mt-16 md:ms-2 md:my-0" data-aos="zoom-in-up">
+                  <h3 className="mt-2 mb-1 text-3xl font-extrabold text-center text-color2 md:text-2xl md:text-start">
                     Our Vision
                   </h3>
                   <hr className="text-color2 md:w-1/2 w-3/4 border-[0.1rem] border-[#00B4FE] mb-4 mx-auto md:mx-0 " />
